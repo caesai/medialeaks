@@ -1,14 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import PropTypes from 'prop-types';
 import routes from './routes';
 import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
 
-export default class App extends React.Component {
-  static get propTypes() {
-    return {
-      store: React.PropTypes.object.isRequired
-    }
-  }
+class App extends React.Component {
   render() {
     return (
       <Provider store={this.props.store}>
@@ -17,3 +13,9 @@ export default class App extends React.Component {
     )
   }
 }
+
+App.propTypes = {
+  store: PropTypes.object.isRequired
+};
+
+export default App;

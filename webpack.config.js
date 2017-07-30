@@ -5,7 +5,7 @@ const config = {
   entry: './index.js',
   output: {
     path: path.resolve(__dirname, './static'),
-    publicPath: 'static',
+    publicPath: '/static/',
     filename: 'bundle.js'
   },
   module: {
@@ -21,12 +21,25 @@ const config = {
         }
       },
       {
-      test: /\.scss$/,
-      use: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: ['css-loader', 'sass-loader']
-      })
-    }]
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+            {
+              loader: 'file-loader?name=/img/[name].[ext]'
+            }
+          ]
+      },
+      {
+        test: /\.(otf|eot|svg|ttf|woff|woff2)$/,
+        use: ['url-loader?limit=100&name=fonts/[name].[ext]']
+      }
+    ]
   },
   plugins: [
     new ExtractTextPlugin('styles.css')

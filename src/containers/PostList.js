@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {parseJson} from '../utils';
+import {parseJSON, _parseJSON} from '../utils';
+import 'whatwg-fetch';
+import base64 from 'base-64';
 
 const mapStateToProps = (state) => ({
   isAuthenticating   : state.auth.isAuthenticating,
@@ -17,17 +19,28 @@ class PostList extends React.Component {
       posts: []
     }
   }
-  // componentWillMount () {
-  //   return fetch(DEV_SITE + '/wp-json/wp/v2/posts',{
-  //     mode: 'no-cors'
-  //   })
-  //   .then(parseJson)
-  //   .then(posts => {
-  //     this.setState({
-  //       posts: posts
-  //     });
-  //   })
-  // }
+  componentWillMount () {
+    // return fetch(DEV_SITE + '/wp-json/wp/v2/posts',{
+    //   method: 'get',
+    //   credentials: 'include',
+    //   // mode: 'no-cors',
+    //   headers: {
+    //       'Accept': 'application/json',
+    //       'Content-Type': 'application/json',
+    //       'Authorization': 'Basic ' + Buffer.from('test:eZk3qxEsrtu6BdCYfGXncgjKV').toString('base64')
+    //   }
+    // })
+    // .then((response) => {
+    //   console.log(response);
+    // })
+    // .then(posts => {
+    //   console.log(posts);
+    //   this.setState({
+    //     posts: posts
+    //   });
+    // })
+    // .catch((error) => console.log(error));
+  }
   render(){
     return(
       <div>
