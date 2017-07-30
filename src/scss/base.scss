@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: AkrobatExtraBold;
+    src: url(../fonts/Akrobat-ExtraBold.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
     font-family: Akrobat-ExtraBold;
     src: url(../fonts/Akrobat-ExtraBold.otf);
     font-weight: 400;
@@ -19,16 +26,42 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: GothamProMed;
+    src: url(../fonts/GothaProMed.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GothamProBold;
+    src: url(../fonts/GothaProBol.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 .post_template {
-  max-width: 880px;
   font-family: Akrobat;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.post {
+  display: inline-block;
+  max-width: 880px;
+  background-color: #fff;
 }
 
 .post_title {
+  position: relative;
   display: table;
   width: 100%;
   height: 350px;
@@ -41,6 +74,8 @@
   padding: 52px;
 
   div {
+    position: relative;
+    z-index: 2;
     display: table-cell;
     vertical-align: bottom;
 
@@ -60,20 +95,39 @@
     font-size: 14px;
     color: #ffffff;
   }
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+  }
 }
 
 .post_content {
-  padding: 0 52px;
+  padding: 0 52px 65px;
+  background-color: #fff;
+  font-family: GothamPro;
+  font-size: 16px;
+  line-height: 1.5;
 
   h2 {
-    margin: 52px 0;
+    margin: 34px 0;
+    font-family: GothamPro;
+    font-size: 18px;
   }
 }
 
 .author_avatar {
+  position: relative;
   border-top: 1px solid rgba(0,0,0,0.2);
   border-bottom: 1px solid rgba(0,0,0,0.2);
   padding: 19px 0;
+  margin-bottom: 44px;
   font-family: GothamPro;
   font-size: 18px;
   color: #717171;
@@ -84,5 +138,428 @@
     border-radius: 50%;
     width: 63px;
     height: 63px;
+  }
+}
+
+.post_quote {
+  font-family: GothamProBold;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 27px 0;
+  line-height: 1.5;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  margin: 40px 0;
+
+  p {
+    max-width: 680px;
+    margin: 0;
+    display: inline-block;
+  }
+
+  &:before {
+    content: '';
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/quotes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 88px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 27px;
+  }
+}
+
+.social-qoute_widget {
+  max-width: 780px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 2px #d1dae0;
+  padding: 36px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.widget_title {
+  border-bottom: 1px solid #8a8a8a;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.social-network_icon {
+  display: inline-block;
+  font-size: 52px;
+  margin-right: 30px;
+  transition: 0.3s ease-out 0.1s;
+
+  .fa-vk {
+    color: #29548e;
+  }
+
+  .fa-twitter {
+    color: #00aced;
+  }
+
+  .fa-facebook {
+    color: #46389b;
+  }
+
+  .instagram {
+    width: 60px;
+    height: 60px;
+    margin-bottom: -20px;
+    margin-left: -10px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.social-network_author {
+  display: inline-block;
+  color: #000;
+
+  h3 {
+    font-family: GothamProMed;
+    font-size: 22px;
+    margin: 0;
+    transition: 0.3s ease-out 0.1s;
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  span {
+    display: block;
+    font-family: GothamPro;
+    font-size: 14px;
+    color: #8a8a8a;
+    margin-top: 4px;
+    transition: 0.3s ease-out 0.1s;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+.social-network_source {
+  position: absolute;
+  right: 0;
+  bottom: 34px;
+  text-align: right;
+  font-family: GothamPro;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.widget-image {
+  img {
+    max-width: 680px;
+    max-height: 780px;
+  }
+}
+
+.widget-caption {
+  p {
+    font-family: GothamProMed;
+    font-size: 16px;
+    max-width: 680px;
+  }
+}
+
+.post_tags {
+  font-size: 16px;
+  color: #000;
+  margin-top: 33px;
+
+  span {
+    cursor: pointer;
+    padding: 10px 13px 7px 13px;
+    background-color: #d2d2d2;
+    margin-right: 13px;
+    transition: 0.3s ease-out 0.1s;
+    border: 1px solid #d2d2d2;
+
+    &:hover {
+      border-color: #ffdc56;
+      background-color: #fff;
+    }
+  }
+}
+
+.author_social,
+.post_social {
+  position: relative;
+  margin-top: 36px;
+  color: #fff;
+
+  span {
+    display: inline-block;
+    height: 34px;
+    width: 80px;
+    padding: 7px 8px 4px;
+    margin-right: 14px;
+    cursor: pointer;
+    font-family: GothamProMed;
+    font-size: 16px;
+
+    i {
+      margin-right: 4px;
+      font-size: 20px;
+    }
+  }
+
+  .vk_btn {
+    background-color: #29548e;
+  }
+
+  .tw_btn {
+    background-color: #00aced;
+    width: 50px;
+    text-align: center;
+  }
+
+  .fb_btn {
+    background-color: #46389b;
+  }
+
+  .ok_btn {
+    background-color: #f28400;
+  }
+
+  .disclaimer {
+    position: absolute;
+    font-family: GothamPro;
+    font-size: 12px;
+    line-height: 1.38;
+    text-align: left;
+    color: #767676;
+    max-width: 313px;
+    width: 100%;
+    top: -5px;
+    right: 0;
+  }
+}
+
+.author_social {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 34px;
+  margin: auto;
+}
+
+.sidebar_right {
+  display: inline-block;
+  max-width: 300px;
+  vertical-align: top;
+  margin-left: 24px;
+
+  h3 {
+    position: relative;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffca00;
+    padding: 19px 0;
+    margin-top: 0;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+
+      border-top: 15px solid #ffca00;
+    }
+  }
+
+
+  .didgest_news {
+    margin-bottom: 25px;
+  }
+
+  .didgest_image {
+    height: 180px;
+    width: 100%;
+    background-image: url(../img/mirrors.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .didgest_caption {
+    padding: 27px;
+    background-color: #fff;
+    border: 3px solid #ffca00;
+    border-top: 0;
+    font-family: GothamProMed;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+  }
+
+  .didgest_credential {
+    display: table;
+    width: 100%;
+    height: 10px;
+    font-family: GothamPro;
+    font-size: 12px;
+    line-height: 3.75;
+    color: #8f8f8f;
+
+    p {
+      float: left;
+
+      &+p {
+        float: right;
+      }
+    }
+  }
+}
+
+.history-ofaday {
+  position: relative;
+  width: 100%;
+  height: 530px;
+  overflow: hidden;
+  background-image: url('../img/girl.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  h3 {
+    position: relative;
+    z-index: 2;
+  }
+
+  .history-ofaday_caption {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    padding: 28px;
+    font-family: GothamProMed;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.13;
+
+    div {
+      color: #fff;
+    }
+  }
+
+  &:after {
+    content: '';
+    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+}
+
+.most-readable {
+  display: table;
+  width: 100%;
+  margin: 26px auto;
+  background-color: #fff;
+  padding: 50px;
+  counter-reset: num-p;
+
+  h2 {
+    margin-top: 0;
+    font-family: AkrobatExtraBold;
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 1.33;
+  }
+
+  .mr_row {
+    display: table-row;
+    width: 100%;
+  }
+
+  .mr_block {
+    display: table-cell;
+    font-family: GothamProMed;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    margin-bottom: 14px;
+
+    .mr_block_border {
+      display: table;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      color: #000;
+      text-decoration: none;
+      margin-bottom: 15px;
+      max-width: 460px;
+      margin-left: 60px;
+      counter-increment: num-p;
+      transition: 0.3s ease-out 0.1s;
+
+      div {
+        margin-top: 17px;
+      }
+
+      &:before {
+        position: absolute;
+        content: counter(num-p) '.';
+        font-family: Akrobat;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 0.4;
+        text-align: left;
+        color: #ffca00;
+        left: -55px;
+        top: 10px;
+      }
+    }
+
+    span {
+      font-family: GothamPro;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.71;
+      text-align: left;
+      color: #999999;
+      cursor: pointer;
+      transition: 0.3s ease-out 0.1s;
+
+      i {
+        margin-right: 6px;
+      }
+
+      &+span {
+        margin-left: 19px;
+      }
+
+      &:hover {
+        color: #000;
+      }
+    }
   }
 }
