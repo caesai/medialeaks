@@ -50,7 +50,7 @@ a {
 .post_template {
   font-family: Akrobat;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 80px auto 0; }
 
 .post {
   display: inline-block;
@@ -353,7 +353,6 @@ a {
     text-transform: uppercase;
      font-size: 24px;
      font-weight: bold;
-     line-height: 1.67;
      letter-spacing: 0.6px;
     background-color: #ffca00;
     z-index: 1;
@@ -382,7 +381,7 @@ a {
     background-size: cover;
     background-position: center; }
   .sidebar_right .didgest_caption {
-    padding: 27px;
+    padding: 21px 28px 27px 27px;
     background-color: #fff;
     border: 3px solid #ffca00;
     border-top: 0;
@@ -396,11 +395,15 @@ a {
     height: 10px;
     font-family: GothamPro;
     font-size: 12px;
-    line-height: 3.75;
     color: #8f8f8f; }
     .sidebar_right .didgest_credential p {
+      max-width: 235px;
+    }
+    .sidebar_right .didgest_credential p {
+      margin-bottom: 0;
       float: left; }
       .sidebar_right .didgest_credential p + p {
+        cursor: pointer;
         float: right; }
   @media (max-width: 680px) {
     .sidebar_right {
@@ -425,9 +428,9 @@ a {
     z-index: 2;
     color: #fff;
     padding: 28px;
-    font-family: GothamProMed;
+    font-family: GothamPro;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.13; }
     .history-ofaday .history-ofaday_caption div {
       color: #fff; }
@@ -452,6 +455,7 @@ a {
   .most-readable h2 {
     margin-top: 0;
     font-family: AkrobatExtraBold;
+    text-transform: uppercase;
     font-size: 33px;
     font-weight: 800;
     line-height: 1.33; }
@@ -460,7 +464,7 @@ a {
     width: 100%; }
   .most-readable .mr_block {
     display: table-cell;
-    font-family: GothamProMed;
+    font-family: GothamPro;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.22;
@@ -484,7 +488,7 @@ a {
       .most-readable .mr_block a:before {
         position: absolute;
         content: counter(num-p) ".";
-        font-family: Akrobat;
+        font-family: AkrobatExtraBold;
         font-size: 60px;
         font-weight: 900;
         line-height: 0.4;
@@ -560,9 +564,10 @@ footer {
     margin-right: 30px;
     color: #b5b5b5;
     cursor: pointer; }
+    footer .footer_logo img,
     header .header_logo img {
       position: relative;
-      top: 15px;
+      top: 13px;
     }
   header .header_social,
   header .footer_social,
@@ -613,4 +618,37 @@ footer {
       display: none; } }
 
 header {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
   margin-bottom: 44px; }
+
+  .post_content a {
+      font-family: GothamProBold;
+      font-weight: bold;
+      color: #333;
+      text-decoration: underline;
+  }
+  .post_content a:hover {
+      color: #ffc831;
+  }
+  .post_content a:not([href*="medialeaks.ru"]){
+      font-family: GothamPro;
+  }
+  .post_content a:not([href*="medialeaks.ru"]):hover {
+      color: #333;
+      text-decoration: none;
+  }
+  .seealso a{
+      color: #333;
+      text-decoration: none;
+  }
+  .seealso a:hover {
+      text-decoration: underline;
+  }
+  .seealso{
+      color: #ffc831;
+  }
