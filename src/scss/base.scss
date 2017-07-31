@@ -51,13 +51,13 @@ body {
 
 .post_template {
   font-family: Akrobat;
-  max-width: 1260px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .post {
   display: inline-block;
-  max-width: 880px;
+  max-width: 875px;
   background-color: #fff;
 
   @media(max-width: 680px) {
@@ -428,14 +428,19 @@ body {
   vertical-align: top;
   margin-left: 24px;
 
-  h3 {
+  .h3 {
+    font-family: AkrobatExtraBold;
     position: relative;
     display: block;
     text-align: center;
     text-transform: uppercase;
     background-color: #ffca00;
-    padding: 19px 0;
+    padding: 12px 0;
     margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: 0.6px;
 
     &:after {
       content: '';
@@ -456,6 +461,7 @@ body {
 
   .didgest_news {
     margin-bottom: 25px;
+    margin-top: 25px;
   }
 
   .didgest_image {
@@ -511,7 +517,7 @@ body {
   background-size: cover;
   background-position: center;
 
-  h3 {
+  .h3 {
     position: relative;
     z-index: 2;
   }
@@ -657,21 +663,27 @@ footer {
   .footer_container {
     position: relative;
     width: 100%;
-    max-width: 1260px;
+    max-width: 1200px;
     margin: 0 auto;
+
+    p {
+      margin: 15px 0;
+    }
   }
 
   ul {
     display: inline-block;
     list-style: none;
+    margin: 15px 0;
 
     li {
       display: inline-block;
-      margin-right: 15px;
+      margin-right: 25px;
 
       a {
+        font-family: Akrobat-ExtraBold;
         text-decoration: none;
-        text-transform: uppercase;
+        text-transform: lowercase;
         color: #000000;
       }
     }
@@ -684,6 +696,14 @@ footer {
     margin-right: 30px;
     color: #b5b5b5;
     cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .header_logo {
+    img {
+      position: relative;
+      top: 15px;
+    }
   }
 
   .header_social,
@@ -700,12 +720,17 @@ footer {
       color: #46389b;
     }
 
+    .fa-twitter {
+      color: #00aced;
+    }
+
     .fa-odnoklassniki {
       color: #f28400;
     }
 
     i {
-      margin-right: 24px;
+      font-size: 22px;
+      margin-right: 15px;
       cursor: pointer;
     }
   }
@@ -737,4 +762,5 @@ footer {
 
 header {
   margin-bottom: 44px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }

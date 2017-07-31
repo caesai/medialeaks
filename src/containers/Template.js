@@ -3,6 +3,8 @@ import React from 'react';
 import '../scss/base.scss';
 
 /* Images */
+import logo from '../img/ML_Logo.png';
+import searchicon from '../img/private-eye-magnifying-glass.png'
 import avatar from '../img/avatar.png';
 import ronal from '../img/ronal.jpg';
 import baskov from '../img/baskov2.jpg';
@@ -16,7 +18,7 @@ export default class Template extends React.Component {
       <header>
         <div className="header_container">
           <a href="#" className="header_logo">
-            <p>Medialeaks</p>
+            <img src={logo} alt="" />
           </a>
           <ul>
             <li><a href="#">Новости</a></li>
@@ -28,11 +30,12 @@ export default class Template extends React.Component {
             <p>
               <i className="fa fa-vk"></i>
               <i className="fa fa-facebook"></i>
+              <i className="fa fa-twitter"></i>
               <i className="fa fa-odnoklassniki"></i>
             </p>
           </div>
           <span>
-            <i className="fa fa-search"></i>
+            <img src={searchicon} alt="" />
           </span>
         </div>
 
@@ -198,7 +201,7 @@ export default class Template extends React.Component {
 
         <div className="sidebar_right">
           <div className="didgest">
-            <h3>Самое читаемое</h3>
+            <span className="h3">Самое читаемое</span>
 
             <div className="didgest_news">
               <div className="didgest_image"></div>
@@ -223,7 +226,7 @@ export default class Template extends React.Component {
             </div>
 
             <div className="history-ofaday">
-              <h3>История дня</h3>
+              <span className="h3">История дня</span>
               <div className="history-ofaday_caption">
                 <p>Когда включили «Деспасито». Как песня музыкантов из Пуэрто-Рико стала хитом этого лета и превратилась в мем</p>
                 <div className="didgest_credential">
@@ -346,6 +349,7 @@ export default class Template extends React.Component {
             <p>
               <i className="fa fa-vk"></i>
               <i className="fa fa-facebook"></i>
+              <i className="fa fa-twitter"></i>
               <i className="fa fa-odnoklassniki"></i>
             </p>
           </div>
