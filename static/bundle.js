@@ -15222,11 +15222,11 @@ var _Template = __webpack_require__(306);
 
 var _Template2 = _interopRequireDefault(_Template);
 
-var _PostList = __webpack_require__(311);
+var _PostList = __webpack_require__(314);
 
 var _PostList2 = _interopRequireDefault(_PostList);
 
-var _PostPage = __webpack_require__(314);
+var _PostPage = __webpack_require__(317);
 
 var _PostPage2 = _interopRequireDefault(_PostPage);
 
@@ -15495,7 +15495,7 @@ var _configureStore = __webpack_require__(269);
 
 var _configureStore2 = _interopRequireDefault(_configureStore);
 
-var _App = __webpack_require__(322);
+var _App = __webpack_require__(325);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -29662,11 +29662,11 @@ var _reduxRouter = __webpack_require__(76);
 
 var _redux = __webpack_require__(31);
 
-var _reduxPromise = __webpack_require__(315);
+var _reduxPromise = __webpack_require__(318);
 
 var _reduxPromise2 = _interopRequireDefault(_reduxPromise);
 
-var _reduxThunk = __webpack_require__(321);
+var _reduxThunk = __webpack_require__(324);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
@@ -31627,17 +31627,29 @@ var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(307);
 
-var _avatar = __webpack_require__(308);
+var _avatar = __webpack_require__(309);
 
 var _avatar2 = _interopRequireDefault(_avatar);
 
-var _ronal = __webpack_require__(309);
+var _ronal = __webpack_require__(310);
 
 var _ronal2 = _interopRequireDefault(_ronal);
 
-var _baskov = __webpack_require__(310);
+var _baskov = __webpack_require__(311);
 
 var _baskov2 = _interopRequireDefault(_baskov);
+
+var _InstagramLogo = __webpack_require__(312);
+
+var _InstagramLogo2 = _interopRequireDefault(_InstagramLogo);
+
+var _timati = __webpack_require__(313);
+
+var _timati2 = _interopRequireDefault(_timati);
+
+var _girl = __webpack_require__(308);
+
+var _girl2 = _interopRequireDefault(_girl);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31664,218 +31676,799 @@ var Template = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'post_template' },
+        null,
         _react2.default.createElement(
-          'div',
-          { className: 'post_title' },
+          'header',
+          null,
           _react2.default.createElement(
             'div',
-            null,
+            { className: 'header_container' },
             _react2.default.createElement(
-              'p',
-              { className: 'post_date' },
-              '19 \u0438\u044E\u043B\u044F 13:00'
+              'a',
+              { href: '#', className: 'header_logo' },
+              _react2.default.createElement(
+                'p',
+                null,
+                'Medialeaks'
+              )
             ),
             _react2.default.createElement(
-              'h1',
+              'ul',
               null,
-              '\u0417\u0430\u043F\u0438\u0441\u044C \u043D\u0430 \u0442\u0435\u0441\u0442\u043E\u0432\u043E\u043C \u0441\u0430\u0439\u0442\u0435. \u041D\u043E\u0432\u0430\u044F. \u0434\u043E\u0431\u0430\u0432\u0438\u043B \u0432\u043E\u0442'
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  '\u041D\u043E\u0432\u043E\u0441\u0442\u0438'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  '\u0418\u0441\u0442\u043E\u0440\u0438\u0438'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  '\u041E\u0442\u0432\u0435\u0442\u044B'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  '\u0412\u0438\u0434\u0435\u043E'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'header_social' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement('i', { className: 'fa fa-vk' }),
+                _react2.default.createElement('i', { className: 'fa fa-facebook' }),
+                _react2.default.createElement('i', { className: 'fa fa-odnoklassniki' })
+              )
+            ),
+            _react2.default.createElement(
+              'span',
+              null,
+              _react2.default.createElement('i', { className: 'fa fa-search' })
             )
           )
         ),
         _react2.default.createElement(
           'div',
-          { className: 'post_content' },
-          _react2.default.createElement(
-            'h2',
-            null,
-            '\u041F\u043E\u0434\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A \u043F\u0440\u043E \u041D\u0438\u043A\u043E\u043B\u0430\u0441\u0430 \u041A\u0435\u0439\u0434\u0436\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0441\u043D\u0438\u043C\u0430\u043B\u0441\u044F \u0432 \u0445\u043E\u0440\u043E\u0448\u0438\u0445 \u0444\u0438\u043B\u044C\u043C\u0430\u0445 \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 90\u0445, \u0430 \u043F\u043E\u0442\u043E\u043C \u0447\u0442\u043E-\u0442\u043E \u043F\u043E\u0448\u043B\u043E \u043D\u0435 \u0442\u0430\u043A.'
-          ),
+          { className: 'post_template' },
           _react2.default.createElement(
             'div',
-            { className: 'author_avatar' },
-            _react2.default.createElement('img', { alt: '', src: _avatar2.default, className: 'avatar', height: '52', width: '52' }),
-            _react2.default.createElement(
-              'p',
-              null,
-              '\u0422\u0430\u0442\u044C\u044F\u043D\u0430 \u0422\u044E\u0442\u044E\u043D\u043E\u0432\u0430'
-            ),
+            { className: 'post' },
             _react2.default.createElement(
               'div',
-              { className: 'author_social' },
-              _react2.default.createElement('span', { className: 'vk_btn' }),
-              _react2.default.createElement('span', { className: 'fb_btn' }),
-              _react2.default.createElement('span', { className: 'tw_btn' }),
-              _react2.default.createElement('span', { className: 'ok_btn' })
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            '\u041D\u0430 \u043F\u0435\u0440\u0432\u0443\u044E \u0438\u0433\u0440\u0443 \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u043E\u0433\u043E \u043A\u043B\u0443\u0431\u0430 \xAB\u0410\u0445\u043C\u0430\u0442\xBB \u043F\u043E\u0434 \u043D\u043E\u0432\u044B\u043C \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u043C \u043F\u0440\u0438\u0435\u0445\u0430\u043B\u043E \u043D\u0435\u043E\u0436\u0438\u0434\u0430\u043D\u043D\u043E \u043C\u043D\u043E\u0433\u043E \u0437\u0432\u0451\u0437\u0434 \u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0439 \u044D\u0441\u0442\u0440\u0430\u0434\u044B \u0438 \u0434\u0430\u0436\u0435 \u043C\u0438\u0440\u043E\u0432\u0430\u044F \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u0430\u044F \u0437\u043D\u0430\u043C\u0435\u043D\u0438\u0442\u043E\u0441\u0442\u044C \u0420\u043E\u043D\u0430\u043B\u044C\u0434\u0438\u043D\u044C\u043E. \u0417\u0432\u0451\u0437\u0434\u044B \u0430\u043A\u0442\u0438\u0432\u043D\u043E \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u043B\u0438 \u043E \u0441\u0432\u043E\u0451\u043C \u0432\u0440\u0435\u043C\u044F\u043F\u0440\u0435\u043F\u0440\u043E\u0432\u043E\u0436\u0434\u0435\u043D\u0438\u0438 \u043D\u0430 \u043C\u0430\u0442\u0447\u0435 \u0432 \u0413\u0440\u043E\u0437\u043D\u043E\u043C \u0432 \u0438\u043D\u0441\u0442\u0430\u0433\u0440\u0430\u043C\u0435: \u0444\u0438\u0433\u0443\u0440\u0438\u0441\u0442 \u0415\u0432\u0433\u0435\u043D\u0438\u0439 \u041F\u043B\u044E\u0449\u0435\u043D\u043A\u043E \u0438 \u0442\u0435\u043B\u0435\u0432\u0435\u0434\u0443\u0449\u0430\u044F \u042F\u043D\u0430 \u0420\u0443\u0434\u043A\u043E\u0432\u0441\u043A\u0430\u044F \u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0440\u043E\u0432\u0430\u043B\u0438\u0441\u044C \u0441 \u043B\u0435\u0433\u0435\u043D\u0434\u043E\u0439 \u0431\u0440\u0430\u0437\u0438\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0444\u0443\u0442\u0431\u043E\u043B\u0430, \u0430 \u043F\u0435\u0432\u0435\u0446 \u041D\u0438\u043A\u043E\u043B\u0430\u0439 \u0411\u0430\u0441\u043A\u043E\u0432 \u043F\u043E\u0437\u0438\u0440\u043E\u0432\u0430\u043B \u0440\u044F\u0434\u043E\u043C \u0441 \u041A\u0430\u0434\u044B\u0440\u043E\u0432\u044B\u043C \u0438 \u0434\u0430\u0436\u0435 \u0442\u0430\u043D\u0446\u0435\u0432\u0430\u043B \u043F\u0435\u0440\u0435\u0434 \u043D\u0438\u043C \u043B\u0435\u0437\u0433\u0438\u043D\u043A\u0443. '
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            '\u0412 \u043D\u0430\u0447\u0430\u043B\u0435 \u0438\u044E\u043D\u044F \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u044B\u0439 \u043A\u043B\u0443\u0431 \xAB\u0422\u0435\u0440\u0435\u043A\xBB \u043F\u0435\u0440\u0435\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043B\u0438 \u0432 \xAB\u0410\u0445\u043C\u0430\u0442\xBB: \u0432 \u0447\u0435\u0441\u0442\u044C \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u043F\u0440\u0435\u0437\u0438\u0434\u0435\u043D\u0442\u0430 \u0427\u0435\u0447\u0435\u043D\u0441\u043A\u043E\u0439 \u0420\u0435\u0441\u043F\u0443\u0431\u043B\u0438\u043A\u0438 \u0410\u0445\u043C\u0430\u0442\u0430 \u041A\u0430\u0434\u044B\u0440\u043E\u0432\u0430, \u043E\u0442\u0446\u0430 \u043D\u044B\u043D\u0435\u0448\u043D\u0435\u0433\u043E \u043F\u0440\u0435\u0437\u0438\u0434\u0435\u043D\u0442\u0430 \u0427\u0435\u0447\u043D\u0438 \u0420\u0430\u043C\u0437\u0430\u043D\u0430. \u042D\u0442\u043E \u0440\u0435\u0448\u0435\u043D\u0438\u0435 \u0431\u044B\u043B\u043E \u0432\u0441\u0442\u0440\u0435\u0447\u0435\u043D\u043E \u0431\u043E\u043B\u0435\u043B\u044C\u0449\u0438\u043A\u0430\u043C\u0438 \u043A\u043B\u0443\u0431\u0430 \u043E\u0447\u0435\u043D\u044C \u043E\u0441\u0442\u0440\u043E. \u0412 \u0441\u043E\u0446\u0441\u0435\u0442\u044F\u0445 \u0444\u0430\u043D\u0430\u0442\u044B \u0432\u044B\u0440\u0430\u0436\u0430\u043B\u0438 \u0441\u0432\u043E\u0451 \u043D\u0435\u0433\u043E\u0434\u043E\u0432\u0430\u043D\u0438\u0435, \u0430 \u043C\u043D\u043E\u0433\u0438\u0435 \u0438 \u0432\u043E\u043E\u0431\u0449\u0435 \u043F\u0438\u0441\u0430\u043B\u0438, \u0447\u0442\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u0431\u043E\u043B\u0435\u0442\u044C \u0437\u0430 \u043A\u043B\u0443\u0431 \u043D\u0435 \u0431\u0443\u0434\u0443\u0442.'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'post_quote' },
-            _react2.default.createElement(
-              'p',
-              null,
-              '\u041D\u0430 \u044D\u0442\u043E\u043C \u043C\u043E\u0451 \u0431\u043E\u043B\u0435\u043D\u0438\u0435 \u0437\u0430 \u043A\u043B\u0443\u0431 \u043F\u0440\u0435\u043A\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F. \u0418 \u0434\u0430\u0436\u0435 \u0435\u0441\u043B\u0438 10 \u0440\u0430\u0437 \u0432\u043E\u0437\u044C\u043C\u0443\u0442 \u041B\u0438\u0433\u0443 \u0427\u0435\u043C\u043F\u0438\u043E\u043D\u043E\u0432, \u0434\u043B\u044F \u043C\u0435\u043D\u044F \u044D\u0442\u043E\u0439 \u043A\u043E\u043C\u0430\u043D\u0434\u044B \u043D\u0435\u0442. \u0424\u041A \xAB\u0422\u0435\u0440\u0435\u043A\xBB \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043B \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C \u043B\u0438\u0447\u043D\u043E \u0434\u043B\u044F \u043C\u0435\u043D\u044F. \u042F \u0443\u0445\u043E\u0436\u0443 \u0438\u0437 \u044D\u0442\u043E\u0439 \u0433\u0440\u0443\u043F\u043F\u044B, \u0432\u044B\u043A\u0438\u0434\u044B\u0432\u0430\u044E \u0441\u0432\u043E\u0439 \u0448\u0430\u0440\u0444, \u0435\u0441\u043B\u0438 \u043A\u043E\u043C\u0443 \u043D\u0443\u0436\u0435\u043D, \u043C\u043E\u0433\u0443 \u043F\u043E\u0434\u0430\u0440\u0438\u0442\u044C, \u0438 \u0441\u043E\u0432\u0435\u0442 \u0432\u0430\u043C \u0432\u0441\u0435\u043C: \u043F\u043E\u0441\u0442\u0443\u043F\u0430\u0439\u0442\u0435 \u0442\u043E\u0447\u043D\u043E \u0442\u0430\u043A \u0436\u0435, \u043A\u0430\u043A \u044F, \u0437\u0430\u0431\u0443\u0434\u044C\u0442\u0435 \u044D\u0442\u0443 \u043A\u043E\u043C\u0430\u043D\u0434\u0443, \u0435\u0451 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435\u0442. \u0418 \u043E\u0442\u043F\u0438\u0448\u0438\u0442\u0435\u0441\u044C \u043E\u0442\u0441\u044E\u0434\u0430, \u0432\u044B \u0441\u0434\u0435\u043B\u0430\u0435\u0442\u0435 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0432\u044B\u0431\u043E\u0440, \u043F\u043E\u0432\u0435\u0440\u044C\u0442\u0435, \u0438 \u0432\u0440\u0435\u043C\u044F \u043D\u0435 \u0431\u0443\u0434\u0435\u0442\u0435 \u0437\u0440\u044F \u0442\u0440\u0430\u0442\u0438\u0442\u044C, \u0438 \u043D\u0435\u0440\u0432\u044B, \u2014 \u043F\u0438\u0448\u0435\u0442 \u043E\u0434\u0438\u043D \u0438\u0437 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u0441\u0430\u0439\u0442\u0430 \xAB\u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435\xBB \u0432 \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u044F\u0445 \u043A \u043F\u043E\u0441\u0442\u0443 \u0432 \u043E\u0434\u043D\u043E\u043C \u0438\u0437 \u0444\u0430\u043D\u0430\u0442\u0441\u043A\u0438\u0445 \u0441\u043E\u043E\u0431\u0449\u0435\u0441\u0442\u0432 \u043A\u043B\u0443\u0431\u0430. '
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            '\u0412 \u0432\u043E\u0441\u043A\u0440\u0435\u0441\u0435\u043D\u044C\u0435, 16 \u0438\u044E\u043B\u044F, \u043A\u043E\u043C\u0430\u043D\u0434\u0430 \u043F\u0435\u0440\u0432\u044B\u0439 \u0440\u0430\u0437 \u0441\u044B\u0433\u0440\u0430\u043B\u0430 \u043F\u043E\u0434 \u043D\u043E\u0432\u044B\u043C \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u043C \u0432 \u043C\u0430\u0442\u0447\u0435 \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u0442\u0443\u0440\u0430 \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0439 \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u0435\u043C\u044C\u0435\u0440-\u043B\u0438\u0433\u0438 \u0441 \u043A\u043B\u0443\u0431\u043E\u043C \xAB\u0410\u043C\u043A\u0430\u0440\xBB. \u041D\u0435\u0441\u043C\u043E\u0442\u0440\u044F \u043D\u0430 \u043C\u043D\u043E\u0433\u043E\u0447\u0438\u0441\u043B\u0435\u043D\u043D\u044B\u0445 \u0431\u043E\u043B\u0435\u043B\u044C\u0449\u0438\u043A\u043E\u0432, \u043E\u0442\u0432\u0435\u0440\u043D\u0443\u0432\u0448\u0438\u0445\u0441\u044F \u043E\u0442 \u043A\u043E\u043C\u0430\u043D\u0434\u044B, \u043D\u0430\u0440\u043E\u0434\u0443 \u043D\u0430 \u0441\u0442\u0430\u0434\u0438\u043E\u043D\u0435 \u0431\u044B\u043B\u043E \u043D\u0435\u043C\u0430\u043B\u043E. \u041D\u043E \u043C\u043D\u043E\u0433\u0438\u043C \u044D\u0442\u043E\u0442 \u043C\u0430\u0442\u0447 \u0437\u0430\u043F\u043E\u043C\u043D\u0438\u043B\u0441\u044F \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0437\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u043D\u044B\u043C\u0438 \u0442\u0440\u0438\u0431\u0443\u043D\u0430\u043C\u0438 \u0438 \u043F\u043E\u0431\u0435\u0434\u043E\u0439 \xAB\u0410\u0445\u043C\u0430\u0442\u0430\xBB \u0441\u043E \u0441\u0447\u0451\u0442\u043E\u043C 1:0, \u0430 \u043E\u0433\u0440\u043E\u043C\u043D\u044B\u043C \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E\u043C \u0437\u0432\u0451\u0437\u0434\u043D\u044B\u0445 \u0433\u043E\u0441\u0442\u0435\u0439, \u0435\u0433\u043E \u043F\u043E\u0441\u0435\u0442\u0438\u0432\u0448\u0438\u0445.'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'more_block' },
-            _react2.default.createElement(
-              'span',
-              null,
-              '\u0427\u0438\u0442\u0430\u0439\u0442\u0435 \u043D\u0430 Medialeaks:'
-            ),
-            ' \u0427\u0442\u043E-\u0447\u0442\u043E \u0442\u0435\u043B\u0444\u043E\u043D\u0438\u044F \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0438\u044F? \u0413\u0438\u0434 \u043F\u043E \u0432\u0438\u0440\u0442\u0443\u0430\u043B\u044C\u043D\u043E\u0439 \u0410\u0422\u0421 \u0434\u043B\u044F \u0447\u0430\u0439\u043D\u0438\u043A\u043E\u0432.'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'social-qoute_widget' },
-            _react2.default.createElement(
-              'a',
-              { href: '#' },
+              { className: 'post_title' },
               _react2.default.createElement(
                 'div',
-                { className: 'widget_title' },
+                null,
                 _react2.default.createElement(
-                  'div',
-                  { className: 'social-network_icon' },
-                  _react2.default.createElement('i', { className: 'fa fa-vk' })
+                  'p',
+                  { className: 'post_date' },
+                  '19 \u0438\u044E\u043B\u044F 13:00'
                 ),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'social-network_author' },
-                  _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Correct Names'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'social-network_source' },
-                  '\u041E\u0440\u0438\u0433\u0438\u043D\u0430\u043B'
+                  'h1',
+                  null,
+                  '\u0417\u0430\u043F\u0438\u0441\u044C \u043D\u0430 \u0442\u0435\u0441\u0442\u043E\u0432\u043E\u043C \u0441\u0430\u0439\u0442\u0435. \u041D\u043E\u0432\u0430\u044F. \u0434\u043E\u0431\u0430\u0432\u0438\u043B \u0432\u043E\u0442'
                 )
               )
             ),
             _react2.default.createElement(
               'div',
-              { className: 'widget_image' },
-              _react2.default.createElement('img', { src: _ronal2.default })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'widget-caption' },
+              { className: 'post_content' },
               _react2.default.createElement(
-                'p',
+                'h2',
                 null,
-                '\u041D\u043E \u0431\u044B\u043B\u0438 \u0438 \u0442\u0435, \u043A\u0442\u043E \u0443\u043F\u0443\u0441\u0442\u0438\u043B \u0448\u0430\u043D\u0441 \u0441\u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u0441 \u0420\u043E\u043D\u0430\u043B\u044C\u0434\u0438\u043D\u044C\u043E. \u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u041D\u0438\u043A\u043E\u043B\u0430\u0439 \u0411\u0430\u0441\u043A\u043E\u0432, \u0441\u043F\u0435\u0432\u0448\u0438\u0439 \u043D\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0438 \u043C\u0430\u0442\u0447\u0430, \u0440\u0435\u0448\u0438\u043B, \u0447\u0442\u043E \u043B\u0443\u0447\u0448\u0435 \u0437\u0430\u043F\u0435\u0447\u0430\u0442\u043B\u0435\u0442\u044C \u0441\u0435\u0431\u044F \u0441 \u0420\u0430\u043C\u0437\u0430\u043D\u043E\u043C \u041A\u0430\u0434\u044B\u0440\u043E\u0432\u044B\u043C. \u0418 \u0434\u0430\u0436\u0435 \u0441\u0442\u0430\u043D\u0446\u0435\u0432\u0430\u043B \u043F\u0435\u0440\u0435\u0434 \u043D\u0438\u043C \u043B\u0435\u0437\u0433\u0438\u043D\u043A\u0443.'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'social-qoute_widget' },
-            _react2.default.createElement(
-              'a',
-              { href: '#' },
+                '\u041F\u043E\u0434\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A \u043F\u0440\u043E \u041D\u0438\u043A\u043E\u043B\u0430\u0441\u0430 \u041A\u0435\u0439\u0434\u0436\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0441\u043D\u0438\u043C\u0430\u043B\u0441\u044F \u0432 \u0445\u043E\u0440\u043E\u0448\u0438\u0445 \u0444\u0438\u043B\u044C\u043C\u0430\u0445 \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 90\u0445, \u0430 \u043F\u043E\u0442\u043E\u043C \u0447\u0442\u043E-\u0442\u043E \u043F\u043E\u0448\u043B\u043E \u043D\u0435 \u0442\u0430\u043A.'
+              ),
               _react2.default.createElement(
                 'div',
-                { className: 'widget_title' },
+                { className: 'author_avatar' },
+                _react2.default.createElement('img', { alt: '', src: _avatar2.default, className: 'avatar', height: '52', width: '52' }),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'social-network_icon' },
-                  _react2.default.createElement('i', { className: 'fa fa-twitter' })
+                  'p',
+                  null,
+                  '\u0422\u0430\u0442\u044C\u044F\u043D\u0430 \u0422\u044E\u0442\u044E\u043D\u043E\u0432\u0430'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { className: 'social-network_author' },
+                  { className: 'author_social' },
                   _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Correct Names'
+                    'span',
+                    { className: 'vk_btn' },
+                    _react2.default.createElement('i', { className: 'fa fa-vk' }),
+                    '345'
                   ),
                   _react2.default.createElement(
                     'span',
-                    null,
-                    '@correct Names'
+                    { className: 'fb_btn' },
+                    _react2.default.createElement('i', { className: 'fa fa-facebook' }),
+                    '243'
+                  ),
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'tw_btn' },
+                    _react2.default.createElement('i', { className: 'fa fa-twitter' })
+                  ),
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'ok_btn' },
+                    _react2.default.createElement('i', { className: 'fa fa-odnoklassniki' }),
+                    '5'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                '\u041D\u0430 \u043F\u0435\u0440\u0432\u0443\u044E \u0438\u0433\u0440\u0443 \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u043E\u0433\u043E \u043A\u043B\u0443\u0431\u0430 \xAB\u0410\u0445\u043C\u0430\u0442\xBB \u043F\u043E\u0434 \u043D\u043E\u0432\u044B\u043C \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u043C \u043F\u0440\u0438\u0435\u0445\u0430\u043B\u043E \u043D\u0435\u043E\u0436\u0438\u0434\u0430\u043D\u043D\u043E \u043C\u043D\u043E\u0433\u043E \u0437\u0432\u0451\u0437\u0434 \u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0439 \u044D\u0441\u0442\u0440\u0430\u0434\u044B \u0438 \u0434\u0430\u0436\u0435 \u043C\u0438\u0440\u043E\u0432\u0430\u044F \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u0430\u044F \u0437\u043D\u0430\u043C\u0435\u043D\u0438\u0442\u043E\u0441\u0442\u044C \u0420\u043E\u043D\u0430\u043B\u044C\u0434\u0438\u043D\u044C\u043E. \u0417\u0432\u0451\u0437\u0434\u044B \u0430\u043A\u0442\u0438\u0432\u043D\u043E \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u043B\u0438 \u043E \u0441\u0432\u043E\u0451\u043C \u0432\u0440\u0435\u043C\u044F\u043F\u0440\u0435\u043F\u0440\u043E\u0432\u043E\u0436\u0434\u0435\u043D\u0438\u0438 \u043D\u0430 \u043C\u0430\u0442\u0447\u0435 \u0432 \u0413\u0440\u043E\u0437\u043D\u043E\u043C \u0432 \u0438\u043D\u0441\u0442\u0430\u0433\u0440\u0430\u043C\u0435: \u0444\u0438\u0433\u0443\u0440\u0438\u0441\u0442 \u0415\u0432\u0433\u0435\u043D\u0438\u0439 \u041F\u043B\u044E\u0449\u0435\u043D\u043A\u043E \u0438 \u0442\u0435\u043B\u0435\u0432\u0435\u0434\u0443\u0449\u0430\u044F \u042F\u043D\u0430 \u0420\u0443\u0434\u043A\u043E\u0432\u0441\u043A\u0430\u044F \u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0440\u043E\u0432\u0430\u043B\u0438\u0441\u044C \u0441 \u043B\u0435\u0433\u0435\u043D\u0434\u043E\u0439 \u0431\u0440\u0430\u0437\u0438\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0444\u0443\u0442\u0431\u043E\u043B\u0430, \u0430 \u043F\u0435\u0432\u0435\u0446 \u041D\u0438\u043A\u043E\u043B\u0430\u0439 \u0411\u0430\u0441\u043A\u043E\u0432 \u043F\u043E\u0437\u0438\u0440\u043E\u0432\u0430\u043B \u0440\u044F\u0434\u043E\u043C \u0441 \u041A\u0430\u0434\u044B\u0440\u043E\u0432\u044B\u043C \u0438 \u0434\u0430\u0436\u0435 \u0442\u0430\u043D\u0446\u0435\u0432\u0430\u043B \u043F\u0435\u0440\u0435\u0434 \u043D\u0438\u043C \u043B\u0435\u0437\u0433\u0438\u043D\u043A\u0443. '
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                '\u0412 \u043D\u0430\u0447\u0430\u043B\u0435 \u0438\u044E\u043D\u044F \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u044B\u0439 \u043A\u043B\u0443\u0431 \xAB\u0422\u0435\u0440\u0435\u043A\xBB \u043F\u0435\u0440\u0435\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043B\u0438 \u0432 \xAB\u0410\u0445\u043C\u0430\u0442\xBB: \u0432 \u0447\u0435\u0441\u0442\u044C \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u043F\u0440\u0435\u0437\u0438\u0434\u0435\u043D\u0442\u0430 \u0427\u0435\u0447\u0435\u043D\u0441\u043A\u043E\u0439 \u0420\u0435\u0441\u043F\u0443\u0431\u043B\u0438\u043A\u0438 \u0410\u0445\u043C\u0430\u0442\u0430 \u041A\u0430\u0434\u044B\u0440\u043E\u0432\u0430, \u043E\u0442\u0446\u0430 \u043D\u044B\u043D\u0435\u0448\u043D\u0435\u0433\u043E \u043F\u0440\u0435\u0437\u0438\u0434\u0435\u043D\u0442\u0430 \u0427\u0435\u0447\u043D\u0438 \u0420\u0430\u043C\u0437\u0430\u043D\u0430. \u042D\u0442\u043E \u0440\u0435\u0448\u0435\u043D\u0438\u0435 \u0431\u044B\u043B\u043E \u0432\u0441\u0442\u0440\u0435\u0447\u0435\u043D\u043E \u0431\u043E\u043B\u0435\u043B\u044C\u0449\u0438\u043A\u0430\u043C\u0438 \u043A\u043B\u0443\u0431\u0430 \u043E\u0447\u0435\u043D\u044C \u043E\u0441\u0442\u0440\u043E. \u0412 \u0441\u043E\u0446\u0441\u0435\u0442\u044F\u0445 \u0444\u0430\u043D\u0430\u0442\u044B \u0432\u044B\u0440\u0430\u0436\u0430\u043B\u0438 \u0441\u0432\u043E\u0451 \u043D\u0435\u0433\u043E\u0434\u043E\u0432\u0430\u043D\u0438\u0435, \u0430 \u043C\u043D\u043E\u0433\u0438\u0435 \u0438 \u0432\u043E\u043E\u0431\u0449\u0435 \u043F\u0438\u0441\u0430\u043B\u0438, \u0447\u0442\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u0431\u043E\u043B\u0435\u0442\u044C \u0437\u0430 \u043A\u043B\u0443\u0431 \u043D\u0435 \u0431\u0443\u0434\u0443\u0442.'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'post_quote' },
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  '\u041D\u0430 \u044D\u0442\u043E\u043C \u043C\u043E\u0451 \u0431\u043E\u043B\u0435\u043D\u0438\u0435 \u0437\u0430 \u043A\u043B\u0443\u0431 \u043F\u0440\u0435\u043A\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F. \u0418 \u0434\u0430\u0436\u0435 \u0435\u0441\u043B\u0438 10 \u0440\u0430\u0437 \u0432\u043E\u0437\u044C\u043C\u0443\u0442 \u041B\u0438\u0433\u0443 \u0427\u0435\u043C\u043F\u0438\u043E\u043D\u043E\u0432, \u0434\u043B\u044F \u043C\u0435\u043D\u044F \u044D\u0442\u043E\u0439 \u043A\u043E\u043C\u0430\u043D\u0434\u044B \u043D\u0435\u0442. \u0424\u041A \xAB\u0422\u0435\u0440\u0435\u043A\xBB \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043B \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C \u043B\u0438\u0447\u043D\u043E \u0434\u043B\u044F \u043C\u0435\u043D\u044F. \u042F \u0443\u0445\u043E\u0436\u0443 \u0438\u0437 \u044D\u0442\u043E\u0439 \u0433\u0440\u0443\u043F\u043F\u044B, \u0432\u044B\u043A\u0438\u0434\u044B\u0432\u0430\u044E \u0441\u0432\u043E\u0439 \u0448\u0430\u0440\u0444, \u0435\u0441\u043B\u0438 \u043A\u043E\u043C\u0443 \u043D\u0443\u0436\u0435\u043D, \u043C\u043E\u0433\u0443 \u043F\u043E\u0434\u0430\u0440\u0438\u0442\u044C, \u0438 \u0441\u043E\u0432\u0435\u0442 \u0432\u0430\u043C \u0432\u0441\u0435\u043C: \u043F\u043E\u0441\u0442\u0443\u043F\u0430\u0439\u0442\u0435 \u0442\u043E\u0447\u043D\u043E \u0442\u0430\u043A \u0436\u0435, \u043A\u0430\u043A \u044F, \u0437\u0430\u0431\u0443\u0434\u044C\u0442\u0435 \u044D\u0442\u0443 \u043A\u043E\u043C\u0430\u043D\u0434\u0443, \u0435\u0451 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435\u0442. \u0418 \u043E\u0442\u043F\u0438\u0448\u0438\u0442\u0435\u0441\u044C \u043E\u0442\u0441\u044E\u0434\u0430, \u0432\u044B \u0441\u0434\u0435\u043B\u0430\u0435\u0442\u0435 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0432\u044B\u0431\u043E\u0440, \u043F\u043E\u0432\u0435\u0440\u044C\u0442\u0435, \u0438 \u0432\u0440\u0435\u043C\u044F \u043D\u0435 \u0431\u0443\u0434\u0435\u0442\u0435 \u0437\u0440\u044F \u0442\u0440\u0430\u0442\u0438\u0442\u044C, \u0438 \u043D\u0435\u0440\u0432\u044B, \u2014 \u043F\u0438\u0448\u0435\u0442 \u043E\u0434\u0438\u043D \u0438\u0437 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u0441\u0430\u0439\u0442\u0430 \xAB\u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435\xBB \u0432 \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u044F\u0445 \u043A \u043F\u043E\u0441\u0442\u0443 \u0432 \u043E\u0434\u043D\u043E\u043C \u0438\u0437 \u0444\u0430\u043D\u0430\u0442\u0441\u043A\u0438\u0445 \u0441\u043E\u043E\u0431\u0449\u0435\u0441\u0442\u0432 \u043A\u043B\u0443\u0431\u0430. '
+                )
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                '\u0412 \u0432\u043E\u0441\u043A\u0440\u0435\u0441\u0435\u043D\u044C\u0435, 16 \u0438\u044E\u043B\u044F, \u043A\u043E\u043C\u0430\u043D\u0434\u0430 \u043F\u0435\u0440\u0432\u044B\u0439 \u0440\u0430\u0437 \u0441\u044B\u0433\u0440\u0430\u043B\u0430 \u043F\u043E\u0434 \u043D\u043E\u0432\u044B\u043C \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u043C \u0432 \u043C\u0430\u0442\u0447\u0435 \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u0442\u0443\u0440\u0430 \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0439 \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u0435\u043C\u044C\u0435\u0440-\u043B\u0438\u0433\u0438 \u0441 \u043A\u043B\u0443\u0431\u043E\u043C \xAB\u0410\u043C\u043A\u0430\u0440\xBB. \u041D\u0435\u0441\u043C\u043E\u0442\u0440\u044F \u043D\u0430 \u043C\u043D\u043E\u0433\u043E\u0447\u0438\u0441\u043B\u0435\u043D\u043D\u044B\u0445 \u0431\u043E\u043B\u0435\u043B\u044C\u0449\u0438\u043A\u043E\u0432, \u043E\u0442\u0432\u0435\u0440\u043D\u0443\u0432\u0448\u0438\u0445\u0441\u044F \u043E\u0442 \u043A\u043E\u043C\u0430\u043D\u0434\u044B, \u043D\u0430\u0440\u043E\u0434\u0443 \u043D\u0430 \u0441\u0442\u0430\u0434\u0438\u043E\u043D\u0435 \u0431\u044B\u043B\u043E \u043D\u0435\u043C\u0430\u043B\u043E. \u041D\u043E \u043C\u043D\u043E\u0433\u0438\u043C \u044D\u0442\u043E\u0442 \u043C\u0430\u0442\u0447 \u0437\u0430\u043F\u043E\u043C\u043D\u0438\u043B\u0441\u044F \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0437\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u043D\u044B\u043C\u0438 \u0442\u0440\u0438\u0431\u0443\u043D\u0430\u043C\u0438 \u0438 \u043F\u043E\u0431\u0435\u0434\u043E\u0439 \xAB\u0410\u0445\u043C\u0430\u0442\u0430\xBB \u0441\u043E \u0441\u0447\u0451\u0442\u043E\u043C 1:0, \u0430 \u043E\u0433\u0440\u043E\u043C\u043D\u044B\u043C \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E\u043C \u0437\u0432\u0451\u0437\u0434\u043D\u044B\u0445 \u0433\u043E\u0441\u0442\u0435\u0439, \u0435\u0433\u043E \u043F\u043E\u0441\u0435\u0442\u0438\u0432\u0448\u0438\u0445.'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'more_block' },
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u0427\u0438\u0442\u0430\u0439\u0442\u0435 \u043D\u0430 Medialeaks:'
+                ),
+                ' \u0427\u0442\u043E-\u0447\u0442\u043E \u0442\u0435\u043B\u0444\u043E\u043D\u0438\u044F \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0438\u044F? \u0413\u0438\u0434 \u043F\u043E \u0432\u0438\u0440\u0442\u0443\u0430\u043B\u044C\u043D\u043E\u0439 \u0410\u0422\u0421 \u0434\u043B\u044F \u0447\u0430\u0439\u043D\u0438\u043A\u043E\u0432.'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'social-qoute_widget' },
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'widget_title' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_icon' },
+                      _react2.default.createElement('i', { className: 'fa fa-vk' })
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_author' },
+                      _react2.default.createElement(
+                        'h3',
+                        null,
+                        'Correct Names'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_source' },
+                      '\u041E\u0440\u0438\u0433\u0438\u043D\u0430\u043B'
+                    )
                   )
                 ),
                 _react2.default.createElement(
                   'div',
-                  { className: 'social-network_source' },
-                  '\u041E\u0440\u0438\u0433\u0438\u043D\u0430\u043B'
+                  { className: 'widget-image' },
+                  _react2.default.createElement('img', { src: _ronal2.default })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'widget-caption' },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    '\u041D\u043E \u0431\u044B\u043B\u0438 \u0438 \u0442\u0435, \u043A\u0442\u043E \u0443\u043F\u0443\u0441\u0442\u0438\u043B \u0448\u0430\u043D\u0441 \u0441\u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u0441 \u0420\u043E\u043D\u0430\u043B\u044C\u0434\u0438\u043D\u044C\u043E. \u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u041D\u0438\u043A\u043E\u043B\u0430\u0439 \u0411\u0430\u0441\u043A\u043E\u0432, \u0441\u043F\u0435\u0432\u0448\u0438\u0439 \u043D\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0438 \u043C\u0430\u0442\u0447\u0430, \u0440\u0435\u0448\u0438\u043B, \u0447\u0442\u043E \u043B\u0443\u0447\u0448\u0435 \u0437\u0430\u043F\u0435\u0447\u0430\u0442\u043B\u0435\u0442\u044C \u0441\u0435\u0431\u044F \u0441 \u0420\u0430\u043C\u0437\u0430\u043D\u043E\u043C \u041A\u0430\u0434\u044B\u0440\u043E\u0432\u044B\u043C. \u0418 \u0434\u0430\u0436\u0435 \u0441\u0442\u0430\u043D\u0446\u0435\u0432\u0430\u043B \u043F\u0435\u0440\u0435\u0434 \u043D\u0438\u043C \u043B\u0435\u0437\u0433\u0438\u043D\u043A\u0443.'
+                  )
                 )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'widget-caption' },
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'social-qoute_widget' },
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'widget_title' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_icon' },
+                      _react2.default.createElement('i', { className: 'fa fa-twitter' })
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_author' },
+                      _react2.default.createElement(
+                        'h3',
+                        null,
+                        'Correct Names'
+                      ),
+                      _react2.default.createElement(
+                        'span',
+                        null,
+                        '@correct Names'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_source' },
+                      '\u041E\u0440\u0438\u0433\u0438\u043D\u0430\u043B'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'widget-caption' },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    '\u041A\u0430\u043A\u043E\u0432 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043C\u043E\u0440\u0430\u043B\u0438 \u0438 \u0438\u043D\u0442\u0435\u043B\u043B\u0435\u043A\u0442\u0430 \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C? \u0416\u0438\u0437\u043D\u044C \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u043F\u0440\u043E\u0434\u0430\u0436\u043D\u043E\u0441\u0442\u044C,\u0431\u0435\u0441\u0442\u0430\u043B\u0430\u043D\u043D\u043E\u0441\u0442\u044C,\u043A\u043B\u043E\u0443\u043D\u0430\u0434\u0443 \u043C\u0438\u0440\u0430 \u0448\u043E\u0443\u0431\u0438\u0437\u043D\u0435\u0441\u0430.\u041D\u0430 \u0417\u0430\u043F\u0430\u0434\u0435 \u043E\u043D\u0438 \u043D\u0435 \u043D\u0443\u0436\u043D\u044B.'
+                  )
+                )
+              ),
               _react2.default.createElement(
                 'p',
                 null,
-                '\u041A\u0430\u043A\u043E\u0432 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043C\u043E\u0440\u0430\u043B\u0438 \u0438 \u0438\u043D\u0442\u0435\u043B\u043B\u0435\u043A\u0442\u0430 \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C? \u0416\u0438\u0437\u043D\u044C \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u043F\u0440\u043E\u0434\u0430\u0436\u043D\u043E\u0441\u0442\u044C,\u0431\u0435\u0441\u0442\u0430\u043B\u0430\u043D\u043D\u043E\u0441\u0442\u044C,\u043A\u043B\u043E\u0443\u043D\u0430\u0434\u0443 \u043C\u0438\u0440\u0430 \u0448\u043E\u0443\u0431\u0438\u0437\u043D\u0435\u0441\u0430.\u041D\u0430 \u0417\u0430\u043F\u0430\u0434\u0435 \u043E\u043D\u0438 \u043D\u0435 \u043D\u0443\u0436\u043D\u044B.'
+                '\u041D\u043E \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438 \u0441\u043E\u0446\u0441\u0435\u0442\u0435\u0439 \u043D\u0435 \u043E\u0446\u0435\u043D\u0438\u043B\u0438 \u0442\u0430\u043D\u0446\u0435\u0432\u0430\u043B\u044C\u043D\u044B\u0435 \u0443\u043C\u0435\u043D\u0438\u044F \u043F\u0435\u0432\u0446\u0430.'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'social-qoute_widget' },
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'widget_title' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_icon' },
+                      _react2.default.createElement('i', { className: 'fa fa-facebook' })
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_author' },
+                      _react2.default.createElement(
+                        'h3',
+                        null,
+                        'Correct Names'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_source' },
+                      '\u041E\u0440\u0438\u0433\u0438\u043D\u0430\u043B'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'widget-image' },
+                  _react2.default.createElement('img', { src: _baskov2.default })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'widget-caption' },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    '\u041D\u043E \u0431\u044B\u043B\u0438 \u0438 \u0442\u0435, \u043A\u0442\u043E \u0443\u043F\u0443\u0441\u0442\u0438\u043B \u0448\u0430\u043D\u0441 \u0441\u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u0441 \u0420\u043E\u043D\u0430\u043B\u044C\u0434\u0438\u043D\u044C\u043E. \u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u041D\u0438\u043A\u043E\u043B\u0430\u0439 \u0411\u0430\u0441\u043A\u043E\u0432, \u0441\u043F\u0435\u0432\u0448\u0438\u0439 \u043D\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0438 \u043C\u0430\u0442\u0447\u0430, \u0440\u0435\u0448\u0438\u043B, \u0447\u0442\u043E \u043B\u0443\u0447\u0448\u0435 \u0437\u0430\u043F\u0435\u0447\u0430\u0442\u043B\u0435\u0442\u044C \u0441\u0435\u0431\u044F \u0441 \u0420\u0430\u043C\u0437\u0430\u043D\u043E\u043C \u041A\u0430\u0434\u044B\u0440\u043E\u0432\u044B\u043C. \u0418 \u0434\u0430\u0436\u0435 \u0441\u0442\u0430\u043D\u0446\u0435\u0432\u0430\u043B \u043F\u0435\u0440\u0435\u0434 \u043D\u0438\u043C \u043B\u0435\u0437\u0433\u0438\u043D\u043A\u0443.'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'social-qoute_widget' },
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'widget_title' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_icon' },
+                      _react2.default.createElement('img', { src: _InstagramLogo2.default, className: 'instagram' })
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_author' },
+                      _react2.default.createElement(
+                        'h3',
+                        null,
+                        'Correct Names'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'social-network_source' },
+                      '\u041E\u0440\u0438\u0433\u0438\u043D\u0430\u043B'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'widget-image' },
+                  _react2.default.createElement('img', { src: _timati2.default, alt: '' })
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'widget-caption' },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    '\u0412 \u0413\u0440\u043E\u0437\u043D\u044B\u0439 \u043D\u0430 \u0438\u0441\u0442\u043E\u0440\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043F\u0435\u0440\u0432\u044B\u0439 \u043C\u0430\u0442\u0447 \u043F\u0440\u0438\u0431\u044B\u0432\u0430\u044E\u0442 \u043F\u043E\u0447\u0435\u0442\u043D\u044B\u0435 \u0433\u043E\u0441\u0442\u0438, \u0441\u0440\u0435\u0434\u0438 \u043D\u0438\u0445 \u0437\u0432\u0435\u0437\u0434\u044B \u0441\u043F\u043E\u0440\u0442\u0430 \u0438 \u044D\u0441\u0442\u0440\u0430\u0434\u044B, \u0420\u043E\u043D\u0430\u043B\u0434\u0438\u043D\u044C\u043E, \u041D\u0438\u043A\u043E\u043B\u0430\u0439 \u0411\u0430\u0441\u043A\u043E\u0432, \u0422\u0438\u043C\u0430\u0442\u0438, \u0412\u0430\u043B\u0435\u0440\u0438\u044F, \u0418\u043E\u0441\u0438\u0444 \u041F\u0440\u0438\u0433\u043E\u0436\u0438\u043D, \u0418\u0433\u043E\u0440\u044C \u0412\u0435\u0440\u043D\u0438\u043A, \u0412\u0438\u043A\u0442\u043E\u0440\u0438\u044F \u041B\u043E\u043F\u044B\u0440\u0435\u0432\u0430, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0442\u0440\u0435\u043D\u0435\u0440 \u0441\u0431\u043E\u0440\u043D\u043E\u0439 \u0420\u043E\u0441\u0441\u0438\u0438 \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432 \u0427\u0435\u0440\u0447\u0435\u0441\u043E\u0432, \u041F\u0440\u0435\u0437\u0438\u0434\u0435\u043D\u0442 \u0420\u0424\u041F\u041B \u0421\u0435\u0440\u0433\u0435\u0439 \u041F\u0440\u044F\u0434\u043A\u0438\u043D \u0438 \u0434\u0440\u0443\u0433\u0438\u0435.'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    '\u041D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0437\u043D\u0430\u043C\u0435\u043D\u0438\u0442\u044B\u0445 \u0438\u043C\u0451\u043D \u0431\u044B\u043B\u0438 \u0440\u0430\u0441\u043A\u0440\u044B\u0442\u044B \u0431\u043E\u043B\u0435\u043B\u044C\u0449\u0438\u043A\u0430\u043C \u0435\u0449\u0451 \u0434\u043E \u043C\u0430\u0442\u0447\u0430 \u0432 \u043E\u0444\u0438\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u043C \u0430\u043A\u043A\u0430\u0443\u043D\u0442\u0435 \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u043E\u0433\u043E \u043A\u043B\u0443\u0431\u0430 \u0432 \u0438\u043D\u0441\u0442\u0430\u0433\u0440\u0430\u043C\u0435.'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                '\u0418\u043C\u044F \u043E\u0442\u0446\u0430 \u0420\u0430\u043C\u0437\u0430\u043D\u0430 \u041A\u0430\u0434\u044B\u0440\u043E\u0432\u0430 \u0431\u044B\u043B\u043E \u0443\u0432\u0435\u043A\u043E\u0432\u0435\u0447\u0435\u043D\u043E \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0432 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0438 \u0444\u0443\u0442\u0431\u043E\u043B\u044C\u043D\u043E\u0433\u043E \u043A\u043B\u0443\u0431\u0430, \u043D\u043E \u0438 \u0432 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0438 \u043C\u043E\u0441\u0442\u0430, \u043D\u0430\u0445\u043E\u0434\u044F\u0449\u0435\u0433\u043E\u0441\u044F \u0432 \u0421\u0430\u043D\u043A\u0442-\u041F\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0435. \u0422\u0430\u043A\u0430\u044F \u0438\u043D\u0438\u0446\u0438\u0430\u0442\u0438\u0432\u0430 \u0431\u044B\u043B\u0430 \u0432\u0441\u0442\u0440\u0435\u0447\u0435\u043D\u0430 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F\u043C\u0438 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0430 \u0442\u0430\u043A \u0436\u0435 \u0431\u043E\u043B\u0435\u0437\u043D\u0435\u043D\u043D\u043E, \u043A\u0430\u043A \u0438 \u043F\u043E\u0437\u0434\u043D\u0435\u0435 \u043F\u0435\u0440\u0435\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435 \xAB\u0422\u0435\u0440\u0435\u043A\u0430\xBB. \u041E\u043D\u0438 \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043B\u0438 \u0442\u0435\u0440\u0430\u043A\u0442 \u043D\u0430 \u0441\u0442\u0430\u0434\u0438\u043E\u043D\u0435 \u0432 \u0413\u0440\u043E\u0437\u043D\u043E\u043C, \u0432 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u0435 \u043A\u043E\u0442\u043E\u0440\u043E\u0433\u043E \u043F\u043E\u0433\u0438\u0431 \u0410\u0445\u043C\u0430\u0442 \u041A\u0430\u0434\u044B\u0440\u043E\u0432, \u0440\u0438\u0441\u043E\u0432\u0430\u043B\u0438 \u0444\u043E\u0442\u043E\u0436\u0430\u0431\u044B \u0438 \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u043B\u0438 \u043D\u043E\u0432\u044B\u0435 \u043C\u0435\u0441\u0442\u0430 \u0434\u043B\u044F \u043F\u0435\u0440\u0435\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u044F.'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'post_tags' },
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u0410\u0445\u043C\u0430\u0442'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u0420\u043E\u043D\u0430\u043B\u044C\u0434\u0438\u043D\u044C\u043E'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u041A\u0430\u0434\u044B\u0440\u043E\u0432'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u0421\u043F\u043E\u0440\u0442'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u0424\u0443\u0442\u0431\u043E\u043B'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'post_social' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'vk_btn' },
+                  _react2.default.createElement('i', { className: 'fa fa-vk' }),
+                  '345'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'fb_btn' },
+                  _react2.default.createElement('i', { className: 'fa fa-facebook' }),
+                  '243'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'tw_btn' },
+                  _react2.default.createElement('i', { className: 'fa fa-twitter' })
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'ok_btn' },
+                  _react2.default.createElement('i', { className: 'fa fa-odnoklassniki' }),
+                  '5'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'disclaimer' },
+                  '\u0415\u0441\u043B\u0438 \u0432\u044B \u043D\u0430\u0448\u043B\u0438 \u043E\u0448\u0438\u0431\u043A\u0443, \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u0432\u044B\u0434\u0435\u043B\u0438\u0442\u0435 \u0444\u0440\u0430\u0433\u043C\u0435\u043D\u0442 \u0442\u0435\u043A\u0441\u0442\u0430 \u0438 \u043D\u0430\u0436\u043C\u0438\u0442\u0435 Ctrl+Enter.'
+                )
               )
             )
           ),
           _react2.default.createElement(
             'div',
-            { className: 'social-qoute_widget' },
+            { className: 'sidebar_right' },
             _react2.default.createElement(
-              'a',
-              { href: '#' },
+              'div',
+              { className: 'didgest' },
+              _react2.default.createElement(
+                'h3',
+                null,
+                '\u0421\u0430\u043C\u043E\u0435 \u0447\u0438\u0442\u0430\u0435\u043C\u043E\u0435'
+              ),
               _react2.default.createElement(
                 'div',
-                { className: 'widget_title' },
+                { className: 'didgest_news' },
+                _react2.default.createElement('div', { className: 'didgest_image' }),
                 _react2.default.createElement(
                   'div',
-                  { className: 'social-network_icon' },
-                  _react2.default.createElement('i', { className: 'fa fa-fb' })
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'social-network_author' },
+                  { className: 'didgest_caption' },
                   _react2.default.createElement(
-                    'h3',
+                    'p',
                     null,
-                    'Correct Names'
+                    '\u0422\u0438\u0440\u0430\u043D\u043D\u043E\u0437\u0430\u0432\u0440, \u0437\u043E\u043C\u0431\u0438 \u0438 \u0432\u0437\u0440\u044B\u0432\u0430\u044E\u0449\u0430\u044F\u0441\u044F \u0433\u043E\u043B\u043E\u0432\u0430. \u041A\u0430\u043A\u0438\u0435 \u044D\u043C\u043E\u0434\u0437\u0438 \u0436\u0434\u0443\u0442 \u043D\u0430\u0441 \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u043C \u0438 \u043A\u0430\u043A \u043E\u0431\u0449\u0430\u0442\u044C\u0441\u044F \u0438\u043C\u0438 \u0443\u0436\u0435 \u0441\u0435\u0439\u0447\u0430\u0441'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'didgest_credential' },
+                    _react2.default.createElement(
+                      'p',
+                      { className: 'didgest_date' },
+                      '13 \u0438\u044E\u043B\u044F 2017 \u0433.'
+                    ),
+                    _react2.default.createElement(
+                      'p',
+                      { className: 'didgest_category' },
+                      '\u0412\u0438\u0434\u0435\u043E'
+                    )
                   )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'didgest_news' },
+                _react2.default.createElement('div', { className: 'didgest_image' }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'didgest_caption' },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    '\xAB\u0423\u043B\u0435\u0442\u0430\u044E \u0441 \u044D\u0442\u043E\u0439 \u043F\u043B\u0430\u043D\u0435\u0442\u044B\xBB. \u041F\u0430\u0443\u043A \u0442\u0430\u043A \u0441\u044A\u0435\u043B \u0441\u0432\u0435\u0440\u0447\u043A\u0430, \u0447\u0442\u043E \u0432\u0441\u0435\u043C \u043D\u0430\u043C \u0442\u0435\u043F\u0435\u0440\u044C \u0445\u043E\u0447\u0435\u0442\u0441\u044F \u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0441\u0435\u0431\u0435 \u043F\u043E\u0434 \u043D\u043E\u0433\u0438'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'didgest_credential' },
+                    _react2.default.createElement(
+                      'p',
+                      { className: 'didgest_date' },
+                      '13 \u0438\u044E\u043B\u044F 2017 \u0433.'
+                    ),
+                    _react2.default.createElement(
+                      'p',
+                      { className: 'didgest_category' },
+                      '\u0412\u0438\u0434\u0435\u043E'
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'history-ofaday' },
+                _react2.default.createElement(
+                  'h3',
+                  null,
+                  '\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u0434\u043D\u044F'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { className: 'social-network_source' },
-                  '\u041E\u0440\u0438\u0433\u0438\u043D\u0430\u043B'
+                  { className: 'history-ofaday_caption' },
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    '\u041A\u043E\u0433\u0434\u0430 \u0432\u043A\u043B\u044E\u0447\u0438\u043B\u0438 \xAB\u0414\u0435\u0441\u043F\u0430\u0441\u0438\u0442\u043E\xBB. \u041A\u0430\u043A \u043F\u0435\u0441\u043D\u044F \u043C\u0443\u0437\u044B\u043A\u0430\u043D\u0442\u043E\u0432 \u0438\u0437 \u041F\u0443\u044D\u0440\u0442\u043E-\u0420\u0438\u043A\u043E \u0441\u0442\u0430\u043B\u0430 \u0445\u0438\u0442\u043E\u043C \u044D\u0442\u043E\u0433\u043E \u043B\u0435\u0442\u0430 \u0438 \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u043B\u0430\u0441\u044C \u0432 \u043C\u0435\u043C'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'didgest_credential' },
+                    _react2.default.createElement(
+                      'p',
+                      { className: 'didgest_date' },
+                      '13 \u0438\u044E\u043B\u044F 2017 \u0433.'
+                    ),
+                    _react2.default.createElement(
+                      'p',
+                      { className: 'didgest_category' },
+                      '\u0412\u0438\u0434\u0435\u043E'
+                    )
+                  )
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'most-readable' },
+            _react2.default.createElement(
+              'h2',
+              null,
+              '\u0421\u0430\u043C\u043E\u0435 \u0447\u0438\u0442\u0430\u0435\u043C\u043E\u0435 \u043D\u0430 medialeaks'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'mr_row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'mr_block' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mr_block_border' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    '\xAB\u0411\u044B\u0441\u0442\u0440\u0435\u0435, \u0447\u0435\u043C \u0440\u0430\u0441\u0442\u0430\u0435\u0442 \u043C\u043E\u0440\u043E\u0436\u0435\u043D\u043E\u0435\xBB. \u041A\u0430\u043A \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u044C \u043C\u0435\u0447\u0442\u0443 \u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0431\u0438\u0437\u043D\u0435\u0441 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0437\u0432\u043E\u043D\u043A\u043E\u0432',
+                    _react2.default.createElement(
+                      'div',
+                      null,
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'likes' },
+                        _react2.default.createElement('i', { className: 'fa fa-heart' }),
+                        '5'
+                      ),
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'sees' },
+                        _react2.default.createElement('i', { className: 'fa fa-eye' }),
+                        '10'
+                      )
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'mr_block' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mr_block_border' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    '\xAB\u0411\u044B\u0441\u0442\u0440\u0435\u0435, \u0447\u0435\u043C \u0440\u0430\u0441\u0442\u0430\u0435\u0442 \u043C\u043E\u0440\u043E\u0436\u0435\u043D\u043E\u0435\xBB. \u041A\u0430\u043A \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u044C \u043C\u0435\u0447\u0442\u0443 \u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0431\u0438\u0437\u043D\u0435\u0441 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0437\u0432\u043E\u043D\u043A\u043E\u0432',
+                    _react2.default.createElement(
+                      'div',
+                      null,
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'likes' },
+                        _react2.default.createElement('i', { className: 'fa fa-heart' }),
+                        '5'
+                      ),
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'sees' },
+                        _react2.default.createElement('i', { className: 'fa fa-eye' }),
+                        '10'
+                      )
+                    )
+                  )
                 )
               )
             ),
             _react2.default.createElement(
               'div',
-              { className: 'widget_image' },
-              _react2.default.createElement('img', { src: _baskov2.default })
+              { className: 'mr_row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'mr_block' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mr_block_border' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    '\xAB\u0411\u044B\u0441\u0442\u0440\u0435\u0435, \u0447\u0435\u043C \u0440\u0430\u0441\u0442\u0430\u0435\u0442 \u043C\u043E\u0440\u043E\u0436\u0435\u043D\u043E\u0435\xBB. \u041A\u0430\u043A \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u044C \u043C\u0435\u0447\u0442\u0443 \u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0431\u0438\u0437\u043D\u0435\u0441 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0437\u0432\u043E\u043D\u043A\u043E\u0432',
+                    _react2.default.createElement(
+                      'div',
+                      null,
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'likes' },
+                        _react2.default.createElement('i', { className: 'fa fa-heart' }),
+                        '5'
+                      ),
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'sees' },
+                        _react2.default.createElement('i', { className: 'fa fa-eye' }),
+                        '10'
+                      )
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'mr_block' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mr_block_border' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    '\xAB\u0411\u044B\u0441\u0442\u0440\u0435\u0435, \u0447\u0435\u043C \u0440\u0430\u0441\u0442\u0430\u0435\u0442 \u043C\u043E\u0440\u043E\u0436\u0435\u043D\u043E\u0435\xBB. \u041A\u0430\u043A \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u044C \u043C\u0435\u0447\u0442\u0443 \u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0431\u0438\u0437\u043D\u0435\u0441 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0437\u0432\u043E\u043D\u043A\u043E\u0432',
+                    _react2.default.createElement(
+                      'div',
+                      null,
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'likes' },
+                        _react2.default.createElement('i', { className: 'fa fa-heart' }),
+                        '5'
+                      ),
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'sees' },
+                        _react2.default.createElement('i', { className: 'fa fa-eye' }),
+                        '10'
+                      )
+                    )
+                  )
+                )
+              )
             ),
             _react2.default.createElement(
               'div',
-              { className: 'widget-caption' },
+              { className: 'mr_row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'mr_block' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mr_block_border' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    '\xAB\u0411\u044B\u0441\u0442\u0440\u0435\u0435, \u0447\u0435\u043C \u0440\u0430\u0441\u0442\u0430\u0435\u0442 \u043C\u043E\u0440\u043E\u0436\u0435\u043D\u043E\u0435\xBB. \u041A\u0430\u043A \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u044C \u043C\u0435\u0447\u0442\u0443 \u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0431\u0438\u0437\u043D\u0435\u0441 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0437\u0432\u043E\u043D\u043A\u043E\u0432',
+                    _react2.default.createElement(
+                      'div',
+                      null,
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'likes' },
+                        _react2.default.createElement('i', { className: 'fa fa-heart' }),
+                        '5'
+                      ),
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'sees' },
+                        _react2.default.createElement('i', { className: 'fa fa-eye' }),
+                        '10'
+                      )
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'mr_block' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mr_block_border' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#' },
+                    '\xAB\u0411\u044B\u0441\u0442\u0440\u0435\u0435, \u0447\u0435\u043C \u0440\u0430\u0441\u0442\u0430\u0435\u0442 \u043C\u043E\u0440\u043E\u0436\u0435\u043D\u043E\u0435\xBB. \u041A\u0430\u043A \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0442\u044C \u043C\u0435\u0447\u0442\u0443 \u0432 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0431\u0438\u0437\u043D\u0435\u0441 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0437\u0432\u043E\u043D\u043A\u043E\u0432',
+                    _react2.default.createElement(
+                      'div',
+                      null,
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'likes' },
+                        _react2.default.createElement('i', { className: 'fa fa-heart' }),
+                        '5'
+                      ),
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'sees' },
+                        _react2.default.createElement('i', { className: 'fa fa-eye' }),
+                        '10'
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'footer',
+          null,
+          _react2.default.createElement(
+            'div',
+            { className: 'footer_container' },
+            _react2.default.createElement(
+              'a',
+              { href: '#', className: 'footer_logo' },
               _react2.default.createElement(
                 'p',
                 null,
-                '\u041D\u043E \u0431\u044B\u043B\u0438 \u0438 \u0442\u0435, \u043A\u0442\u043E \u0443\u043F\u0443\u0441\u0442\u0438\u043B \u0448\u0430\u043D\u0441 \u0441\u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u0441 \u0420\u043E\u043D\u0430\u043B\u044C\u0434\u0438\u043D\u044C\u043E. \u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u041D\u0438\u043A\u043E\u043B\u0430\u0439 \u0411\u0430\u0441\u043A\u043E\u0432, \u0441\u043F\u0435\u0432\u0448\u0438\u0439 \u043D\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0438 \u043C\u0430\u0442\u0447\u0430, \u0440\u0435\u0448\u0438\u043B, \u0447\u0442\u043E \u043B\u0443\u0447\u0448\u0435 \u0437\u0430\u043F\u0435\u0447\u0430\u0442\u043B\u0435\u0442\u044C \u0441\u0435\u0431\u044F \u0441 \u0420\u0430\u043C\u0437\u0430\u043D\u043E\u043C \u041A\u0430\u0434\u044B\u0440\u043E\u0432\u044B\u043C. \u0418 \u0434\u0430\u0436\u0435 \u0441\u0442\u0430\u043D\u0446\u0435\u0432\u0430\u043B \u043F\u0435\u0440\u0435\u0434 \u043D\u0438\u043C \u043B\u0435\u0437\u0433\u0438\u043D\u043A\u0443.'
+                'Medialeaks'
               )
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  '\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  '\u041E \u043F\u0440\u043E\u0435\u043A\u0442\u0435'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  '\u0420\u0435\u043A\u043B\u0430\u043C\u0430'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'footer_social' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement('i', { className: 'fa fa-vk' }),
+                _react2.default.createElement('i', { className: 'fa fa-facebook' }),
+                _react2.default.createElement('i', { className: 'fa fa-odnoklassniki' })
+              )
+            ),
+            _react2.default.createElement(
+              'span',
+              null,
+              '+18'
             )
           )
         )
@@ -31898,22 +32491,40 @@ exports.default = Template;
 /* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/img/avatar.png";
+module.exports = __webpack_require__.p + "/img/girl.jpg";
 
 /***/ }),
 /* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/img/ronal.jpg";
+module.exports = __webpack_require__.p + "/img/avatar.png";
 
 /***/ }),
 /* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/img/baskov2.jpg";
+module.exports = __webpack_require__.p + "/img/ronal.jpg";
 
 /***/ }),
 /* 311 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/img/baskov2.jpg";
+
+/***/ }),
+/* 312 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/img/Instagram-logo.png";
+
+/***/ }),
+/* 313 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/img/timati.jpg";
+
+/***/ }),
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31933,9 +32544,9 @@ var _reactRedux = __webpack_require__(36);
 
 var _utils = __webpack_require__(137);
 
-__webpack_require__(312);
+__webpack_require__(315);
 
-var _base = __webpack_require__(313);
+var _base = __webpack_require__(316);
 
 var _base2 = _interopRequireDefault(_base);
 
@@ -32015,7 +32626,7 @@ PostList = (0, _reactRedux.connect)(mapStateToProps)(PostList);
 exports.default = PostList;
 
 /***/ }),
-/* 312 */
+/* 315 */
 /***/ (function(module, exports) {
 
 (function(self) {
@@ -32482,7 +33093,7 @@ exports.default = PostList;
 
 
 /***/ }),
-/* 313 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! http://mths.be/base64 v0.1.0 by @mathias | MIT license */
@@ -32653,7 +33264,7 @@ exports.default = PostList;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(129)(module), __webpack_require__(75)))
 
 /***/ }),
-/* 314 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32718,7 +33329,7 @@ PostPage = (0, _reactRedux.connect)(mapStateToProps)(PostPage);
 exports.default = PostPage;
 
 /***/ }),
-/* 315 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32730,7 +33341,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports['default'] = promiseMiddleware;
 
-var _fluxStandardAction = __webpack_require__(316);
+var _fluxStandardAction = __webpack_require__(319);
 
 function isPromise(val) {
   return val && typeof val.then === 'function';
@@ -32757,7 +33368,7 @@ function promiseMiddleware(_ref) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 316 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32769,7 +33380,7 @@ exports.isError = isError;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _lodashIsplainobject = __webpack_require__(317);
+var _lodashIsplainobject = __webpack_require__(320);
 
 var _lodashIsplainobject2 = _interopRequireDefault(_lodashIsplainobject);
 
@@ -32788,7 +33399,7 @@ function isError(action) {
 }
 
 /***/ }),
-/* 317 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -32799,9 +33410,9 @@ function isError(action) {
  * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  * Available under MIT license <https://lodash.com/license>
  */
-var baseFor = __webpack_require__(318),
+var baseFor = __webpack_require__(321),
     isArguments = __webpack_require__(139),
-    keysIn = __webpack_require__(319);
+    keysIn = __webpack_require__(322);
 
 /** `Object#toString` result references. */
 var objectTag = '[object Object]';
@@ -32897,7 +33508,7 @@ module.exports = isPlainObject;
 
 
 /***/ }),
-/* 318 */
+/* 321 */
 /***/ (function(module, exports) {
 
 /**
@@ -32951,7 +33562,7 @@ module.exports = baseFor;
 
 
 /***/ }),
-/* 319 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -32963,7 +33574,7 @@ module.exports = baseFor;
  * Available under MIT license <https://lodash.com/license>
  */
 var isArguments = __webpack_require__(139),
-    isArray = __webpack_require__(320);
+    isArray = __webpack_require__(323);
 
 /** Used to detect unsigned integer values. */
 var reIsUint = /^\d+$/;
@@ -33089,7 +33700,7 @@ module.exports = keysIn;
 
 
 /***/ }),
-/* 320 */
+/* 323 */
 /***/ (function(module, exports) {
 
 /**
@@ -33275,7 +33886,7 @@ module.exports = isArray;
 
 
 /***/ }),
-/* 321 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33304,7 +33915,7 @@ thunk.withExtraArgument = createThunkMiddleware;
 exports['default'] = thunk;
 
 /***/ }),
-/* 322 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

@@ -8,7 +8,6 @@ import ronal from '../img/ronal.jpg';
 import baskov from '../img/baskov2.jpg';
 import instagram from '../img/Instagram-logo.png';
 import timati from '../img/timati.jpg';
-import girl from '../img/girl.jpg';
 
 export default class Template extends React.Component {
   render(){
