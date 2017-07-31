@@ -34,6 +34,7 @@
 
     </header>
       <div class="post_template">
+        <div class="post_wrapper">
         <div class="post">
           <div class="post_title">
             <div>
@@ -230,6 +231,7 @@
           </div>
         </div>
       </div>
+      </div>
 
       <div class="most-readable">
         <h2>Самое читаемое на medialeaks</h2>
@@ -350,6 +352,26 @@
       </div>
 
     </footer>
-
+    <script src="js/jquery.min.js"></script>
+    <script>
+      var sideBarTop = $('.sidebar_right').offset().top;
+      var height = $('.sidebar_right').height();
+      var winHeight = $(window).height();
+      var mostReadable = $('.most-readable').offset().top;
+      var gap = 100;
+      $(window).scroll(function(event) {
+        var scrollTop = $(this).scrollTop();
+        console.log(sideBarTop);
+        if (scrollTop + winHeight >= sideBarTop + height + gap) {
+          if (scrollTop + winHeight >= mostReadable + 180) {
+            $('.sidebar_right').removeClass('fixed').addClass('absolute').css({'bottom': '0px', 'top': 'inherit'});
+          } else {
+            $('.sidebar_right').addClass('fixed').css('top', winHeight - height - gap + 'px');
+          }
+        } else {
+            $('.sidebar_right').removeClass('fixed').css('top', '0px');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -50,9 +50,16 @@ body {
 }
 
 .post_template {
+  position: relative;
   font-family: Akrobat;
   max-width: 1200px;
   margin: 80px auto 0;
+}
+
+.post_wrapper {
+  position: relative;
+  display: table;
+  width: 100%;
 }
 
 .post {
@@ -422,7 +429,14 @@ body {
   margin: auto;
 }
 
+.absolute {position: absolute;}
+
+.fixed{position:fixed;}
+
 .sidebar_right {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: inline-block;
   max-width: 300px;
   vertical-align: top;
@@ -529,7 +543,7 @@ body {
 
   .history-ofaday_caption {
     position: absolute;
-    bottom: -30px;
+    bottom: 0;
     left: 0;
     z-index: 2;
     color: #fff;

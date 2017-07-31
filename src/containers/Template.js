@@ -41,7 +41,8 @@ export default class Template extends React.Component {
         </div>
 
       </header>
-        <div className="post_template">
+      <div className="post_template">
+        <div className="post_wrapper">
           <div className="post">
             <div className="post_title">
               <div>
@@ -236,6 +237,7 @@ export default class Template extends React.Component {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
 

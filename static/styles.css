@@ -48,10 +48,15 @@ a {
 }
 
 .post_template {
+  position: relative;
   font-family: Akrobat;
   max-width: 1200px;
   margin: 80px auto 0; }
-
+.post_wrapper {
+  position: relative;
+  display: table;
+  width: 100%;
+}
 .post {
   display: inline-block;
   max-width: 875px;
@@ -339,7 +344,8 @@ a {
   bottom: 0;
   height: 34px;
   margin: auto; }
-
+  .absolute {position: absolute;}
+.fixed {position: fixed;}
 .sidebar_right {
   display: inline-block;
   max-width: 300px;
@@ -423,7 +429,7 @@ a {
     z-index: 2; }
   .history-ofaday .history-ofaday_caption {
     position: absolute;
-    bottom: -30px;
+    bottom: 0;
     left: 0;
     z-index: 2;
     color: #fff;
