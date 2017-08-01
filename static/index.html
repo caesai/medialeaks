@@ -101,6 +101,10 @@
             </div>
           </div>
 
+          <div class="middle-banner">
+            <img src="img/middlebanner.jpg" alt="" />
+          </div>
+
           <div class="social-qoute_widget">
             <a href="#">
               <div class="widget_title">
@@ -162,6 +166,18 @@
             </div>
           </div>
 
+          <div class="social-qoute_widget">
+
+            <div class="widget-caption">
+              <p>Хотя некоторые были искренне рады и удивлены его приезду.</p>
+              <div class="social-network_source_btn">Оригинал</div>
+              <div class="hidden-caption">
+                <img src="img/original.jpg" alt="" />
+              </div>
+
+            </div>
+          </div>
+
           <p>Имя отца Рамзана Кадырова было увековечено не только в названии футбольного клуба, но и в названии моста, находящегося в Санкт-Петербурге. Такая инициатива была встречена пользователями интернета так же болезненно, как и позднее переименование «Терека». Они вспоминали теракт на стадионе в Грозном, в результате которого погиб Ахмат Кадыров, рисовали фотожабы и предлагали новые места для переименования.</p>
 
           <div class="post_tags">
@@ -194,6 +210,7 @@
       </div>
 
       <div class="sidebar_right">
+        <img src="img/sidebarbanner.jpg" alt="" style="margin-bottom:25px;" />
         <div class="didgest">
           <span class="h3">Самое читаемое</span>
 
@@ -231,6 +248,10 @@
           </div>
         </div>
       </div>
+      </div>
+
+      <div class="bottom-banner">
+        <img src="img/botbanner.jpg" alt="" />
       </div>
 
       <div class="most-readable">
@@ -354,6 +375,14 @@
     </footer>
     <script src="js/jquery.min.js"></script>
     <script>
+    $('.social-network_source_btn').on('click', function(){
+      if ($(this).text() == 'Свернуть') {
+        $(this).text('Оригинал');
+      } else {
+        $(this).text('Свернуть')
+      }
+      $('.hidden-caption').toggleClass('active');
+    });
       var sideBarTop = $('.sidebar_right').offset().top;
       var height = $('.sidebar_right').height();
       var winHeight = $(window).height();

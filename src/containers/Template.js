@@ -11,6 +11,10 @@ import ronal from '../img/ronal.jpg';
 import baskov from '../img/baskov2.jpg';
 import instagram from '../img/Instagram-logo.png';
 import timati from '../img/timati.jpg';
+import sidebarbanner from '../img/sidebarbanner.jpg';
+import middlebanner from '../img/middlebanner.jpg';
+import botbanner from '../img/botbanner.jpg';
+import original from '../img/original.jpg';
 
 export default class Template extends React.Component {
   render(){
@@ -109,6 +113,10 @@ export default class Template extends React.Component {
               </div>
             </div>
 
+            <div className="middle-banner">
+              <img src={middlebanner} alt="" />
+            </div>
+
             <div className="social-qoute_widget">
               <a href="#">
                 <div className="widget_title">
@@ -170,6 +178,18 @@ export default class Template extends React.Component {
               </div>
             </div>
 
+            <div className="social-qoute_widget">
+
+              <div className="widget-caption">
+                <p>Хотя некоторые были искренне рады и удивлены его приезду.</p>
+                <div className="social-network_source_btn">Оригинал</div>
+                <div className="hidden-caption">
+                  <img src={original} alt="" />
+                </div>
+
+              </div>
+            </div>
+
             <p>Имя отца Рамзана Кадырова было увековечено не только в названии футбольного клуба, но и в названии моста, находящегося в Санкт-Петербурге. Такая инициатива была встречена пользователями интернета так же болезненно, как и позднее переименование «Терека». Они вспоминали теракт на стадионе в Грозном, в результате которого погиб Ахмат Кадыров, рисовали фотожабы и предлагали новые места для переименования.</p>
 
             <div className="post_tags">
@@ -202,6 +222,7 @@ export default class Template extends React.Component {
         </div>
 
         <div className="sidebar_right">
+          <img src={sidebarbanner} alt="" />
           <div className="didgest">
             <span className="h3">Самое читаемое</span>
 
@@ -239,6 +260,10 @@ export default class Template extends React.Component {
             </div>
           </div>
           </div>
+        </div>
+
+        <div className="bottom-banner">
+          <img src={botbanner} alt="" />
         </div>
 
         <div className="most-readable">

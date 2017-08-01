@@ -256,6 +256,24 @@ a {
     .social-network_source {
       display: none; } }
 
+      .social-network_source_btn {
+        font-size: 14px;
+        color: #8a8a8a;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .hidden-caption {
+        display: block;
+        width: 100%;
+        visibility: hidden;
+        height: 0;
+      }
+    .hidden-caption.active {
+      visibility: visible;
+      display: table;
+      height: 100%;
+    }
 .widget-image img {
   max-width: 680px;
   max-height: 780px; }
@@ -300,7 +318,7 @@ a {
     padding: 7px 8px 4px;
     margin-right: 14px;
     cursor: pointer;
-    font-family: GothamProMed;
+    font-family: GothamPro;
     font-size: 16px; }
     .author_social span i,
     .post_social span i {
@@ -414,6 +432,7 @@ a {
       margin-bottom: 0;
       float: left; }
       .sidebar_right .didgest_credential p + p {
+        font-weight: bold;
         cursor: pointer;
         float: right; }
   @media (max-width: 680px) {
@@ -456,10 +475,29 @@ a {
     height: 100%;
     z-index: 0; }
 
+    .middle-banner {
+      text-align: center;
+      padding: 26px;
+      border-bottom: 26px solid #f2f2f2;
+      border-top: 26px solid #f2f2f2;
+      margin-left: -52px;
+      margin-right: -52px;
+    }
+
+    .bottom-banner {
+      display: inline-block;
+      max-width: 875px;
+      background-color: #fff;
+      margin: 25px 0;
+      width: 100%;
+      padding: 28px;
+      text-align: center;
+    }
+
 .most-readable {
   display: table;
   width: 100%;
-  margin: 26px auto;
+  margin: 0 26px 26px auto;
   background-color: #fff;
   padding: 50px;
   counter-reset: num-p; }
