@@ -161,7 +161,7 @@ a {
     background-image: url(img/quotes.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 88px;
+    background-size: 50px;
     display: inline-block;
     vertical-align: top;
     margin-right: 27px; }
@@ -171,10 +171,13 @@ a {
   border-radius: 5px;
   background-color: #ffffff;
   border: solid 2px #d1dae0;
-  padding: 36px;
+  padding: 20px 36px 36px;
   margin-top: 50px;
   margin-bottom: 50px;
   word-wrap: break-word; }
+  .social-qoute_widget a {
+    text-decoration: none!important;
+  }
   @media (max-width: 680px) {
     .social-qoute_widget {
       max-height: none;
@@ -183,11 +186,9 @@ a {
 .widget_title {
   border-bottom: 1px solid #8a8a8a;
   margin-bottom: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   position: relative; }
-  @media (max-width: 680px) {
-    .widget_title {
-      padding-bottom: 0; } }
+
 
 .social-network_icon {
   display: inline-block;
@@ -203,7 +204,7 @@ a {
   .social-network_icon .instagram {
     width: 60px;
     height: 60px;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
     margin-left: -10px; }
   .social-network_icon:hover {
     opacity: 0.7; }
@@ -218,6 +219,9 @@ a {
 
 .social-network_author {
   display: inline-block;
+  height: 50px;
+  vertical-align: top;
+  margin-top: 20px;
   color: #000; }
   .social-network_author h3 {
     font-family: GothamProMed;
@@ -242,9 +246,10 @@ a {
 .social-network_source {
   position: absolute;
   right: 0;
-  bottom: 34px;
+  bottom: 30px;
   text-align: right;
   font-family: GothamPro;
+  text-decoration: underline;
   font-size: 14px;
   color: #8a8a8a; }
   @media (max-width: 680px) {
@@ -466,10 +471,10 @@ a {
     font-weight: 800;
     line-height: 1.33; }
   .most-readable .mr_row {
-    display: table-row;
-    width: 100%; }
+    display: inline-block;
+    width: 50%;}
   .most-readable .mr_block {
-    display: table-cell;
+    display: block;
     font-family: GothamPro;
     font-size: 18px;
     font-weight: 500;
@@ -554,7 +559,7 @@ footer {
     header ul li,
     footer ul li {
       display: inline-block;
-      margin-right: 25px; }
+      margin-right: 40px; }
       header ul li a,
       footer ul li a {
         font-family: Akrobat-ExtraBold;
@@ -567,7 +572,7 @@ footer {
   footer .footer_logo {
     display: inline-block;
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 60px;
     color: #b5b5b5;
     cursor: pointer; }
     footer .footer_logo img,
@@ -598,7 +603,7 @@ footer {
         color: #00aced;}
     header .header_social i,
     footer .footer_social i {
-      margin-right: 15px;
+      margin-right: 22px;
     cursor: pointer;
     font-size: 22px; }
   header span,

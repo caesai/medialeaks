@@ -189,7 +189,7 @@ body {
     background-image: url(../img/quotes.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 88px;
+    background-size: 50px;
     display: inline-block;
     vertical-align: top;
     margin-right: 27px;
@@ -201,10 +201,14 @@ body {
   border-radius: 5px;
   background-color: #ffffff;
   border: solid 2px #d1dae0;
-  padding: 36px;
+  padding: 20px 36px 36px;
   margin-top: 50px;
   margin-bottom: 50px;
   word-wrap: break-word;
+
+  a {
+    text-decoration: none!important;
+  }
 
   @media (max-width: 680px) {
     max-height: none;
@@ -215,12 +219,8 @@ body {
 .widget_title {
   border-bottom: 1px solid #8a8a8a;
   margin-bottom: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   position: relative;
-
-  @media (max-width: 680px) {
-    padding-bottom: 0;
-  }
 }
 
 .social-network_icon {
@@ -244,7 +244,7 @@ body {
   .instagram {
     width: 60px;
     height: 60px;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
     margin-left: -10px;
   }
 
@@ -265,8 +265,10 @@ body {
 }
 
 .social-network_author {
-  display: inline-block;
+  display: inline-table;
+  margin-top: 0;
   color: #000;
+  vertical-align: text-bottom;
 
   h3 {
     font-family: GothamProMed;
@@ -302,11 +304,12 @@ body {
 .social-network_source {
   position: absolute;
   right: 0;
-  bottom: 34px;
+  bottom: 30px;
   text-align: right;
   font-family: GothamPro;
   font-size: 14px;
   color: #8a8a8a;
+  text-decoration: underline;
 
   @media (max-width: 680px) {
     display: none;
@@ -713,7 +716,7 @@ footer {
   .footer_logo {
     display: inline-block;
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 60px;
     color: #b5b5b5;
     cursor: pointer;
     text-transform: uppercase;
