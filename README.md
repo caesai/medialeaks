@@ -2,6 +2,6 @@
 
 After cloning repository run
 
-### npm run dev
+`npm run dev`
 
 The site is located on http://localhost:8080
