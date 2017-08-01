@@ -167,7 +167,7 @@ body {
       text-align: left;
       color: #8f8f8f;
     }
-    h1 {
+    h2 {
       font-family: AkrobatExtraBold;
       font-size: 22px;
       font-weight: 800;
@@ -288,7 +288,7 @@ body {
 }
 
 .widget_title {
-  border-bottom: 1px solid #8a8a8a;
+  border-bottom: 1px solid rgba(138, 138, 138, 0.38);
   margin-bottom: 25px;
   padding-bottom: 0;
   position: relative;
@@ -369,6 +369,13 @@ body {
     }
   }
 
+  &.twitter {
+    margin-top: 10px;
+
+    span {
+      margin-top:-3px;
+    }
+  }
 
 }
 
@@ -729,6 +736,10 @@ height: 100%;
     font-size: 33px;
     font-weight: 800;
     line-height: 1.33;
+
+    @media(max-width: 680px) {
+      margin-bottom: 10px;
+    }
   }
 
   .mr_row {
@@ -787,6 +798,14 @@ height: 100%;
         color: #ffca00;
         left: -55px;
         top: 10px;
+        @media(max-width: 680px) {
+          left: -40px;
+          font-size: 36px;
+        }
+      }
+      @media(max-width: 680px) {
+        -webkit-font-smoothing: antialiased;
+        margin-left: 40px;
       }
     }
 

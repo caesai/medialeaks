@@ -130,6 +130,9 @@ a {
 .mobile_author p+p {
   float: right;
 }
+.mobile-title h2 {
+  display: none;
+}
 
 @media(max-width: 680px) {
   .mobile_author {
@@ -144,7 +147,8 @@ a {
     text-align: left;
     color: #8f8f8f;
   }
-  .mobile-title h1 {
+  .mobile-title h2 {
+    display: block;
     font-family: AkrobatExtraBold;
     font-size: 22px;
     font-weight: 800;
@@ -161,6 +165,7 @@ a {
   font-size: 16px;
   line-height: 1.5; }
   .post_content h2 {
+
     margin: 34px 0;
     font-family: GothamProBold;
     font-weight: bold;
@@ -252,7 +257,7 @@ a {
       padding: 14px; } }
 
 .widget_title {
-  border-bottom: 1px solid #8a8a8a;
+  border-bottom: 1px solid rgba(138, 138, 138, 0.38);
   margin-bottom: 25px;
   padding-bottom: 0;
   position: relative; }
@@ -300,7 +305,14 @@ a {
       color: blue; }
     @media (max-width: 680px) {
       .social-network_author h3 {
-        font-size: 14px; } }
+        font-size: 14px; }
+      .social-network_author.twitter {
+        margin-top: 10px;
+      }
+      .social-network_author.twitter span {
+        margin-top:-3px;
+      }
+      }
   .social-network_author span {
     display: block;
     font-family: GothamPro;
@@ -360,6 +372,13 @@ a {
   font-family: GothamProMed;
   font-size: 16px;
   max-width: 680px; }
+
+  @media (max-width: 680px) {
+    .widget-caption p {
+      font-family: GothamPro;
+
+    }
+  }
 
 .post_tags {
   font-size: 16px;
@@ -617,6 +636,9 @@ a {
     display: inline-block;
     width: 50%;}
     @media (max-width: 680px) {
+      .most-readable h2 {
+        margin-bottom: 10px;
+      }
       .most-readable .mr_row {
         display: block;
         width: 100%;
@@ -646,6 +668,8 @@ a {
       margin-left: 60px;
       counter-increment: num-p;
       transition: 0.3s ease-out 0.1s; }
+
+
 
       .most-readable .mr_block a div {
         margin-top: 17px; }
@@ -681,6 +705,16 @@ a {
   @media (max-width: 680px) {
     .most-readable {
       padding: 45px 14px; } }
+      @media (max-width: 680px) {
+        .most-readable .mr_block a {
+          -webkit-font-smoothing: antialiased;
+          margin-left: 40px;
+        }
+        .most-readable .mr_block a:before {
+          left: -40px;
+          font-size: 36px;
+        }
+      }
 
 header,
 footer {
