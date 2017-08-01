@@ -111,13 +111,13 @@ a {
 .post_content {
   padding: 0 52px 65px;
   background-color: #fff;
-  font-family: GothamProBold;
+  font-family: GothamPro;
    -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 1.5; }
   .post_content h2 {
     margin: 34px 0;
-    font-family: GothamPro;
+    font-family: GothamProBold;
     font-weight: bold;
     font-size: 18px; }
   @media (max-width: 680px) {
@@ -420,6 +420,14 @@ a {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.22; }
+    .sidebar_right .didgest_caption p{
+      margin: 0;
+      max-width: 235px;
+    }
+    .sidebar_right a {
+      color: inherit;
+      text-decoration: none;
+    }
   .sidebar_right .didgest_credential {
     display: table;
     width: 100%;
@@ -528,6 +536,9 @@ a {
       display: table;
       border-bottom: 1px solid rgba(0, 0, 0, 0.2);
       margin-bottom: 30px; }
+      .most-readable .mr_block:nth-child(3) .mr_block_border {
+        border: none;
+      }
     .most-readable .mr_block a {
       position: relative;
       display: inline-block;
@@ -538,6 +549,7 @@ a {
       margin-left: 60px;
       counter-increment: num-p;
       transition: 0.3s ease-out 0.1s; }
+
       .most-readable .mr_block a div {
         margin-top: 17px; }
       .most-readable .mr_block a:before {
@@ -696,6 +708,9 @@ header {
   .post_content a:not([href*="medialeaks.ru"]):hover {
       color: #333;
       text-decoration: none;
+  }
+  .sees {
+    display: none;
   }
   .seealso a{
       color: #333;

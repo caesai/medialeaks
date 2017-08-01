@@ -521,6 +521,7 @@ height: 100%;
     line-height: 1.22;
 
     p {
+      margin: 0;
       max-width: 235px;
     }
   }
@@ -543,6 +544,11 @@ height: 100%;
         font-weight: bold;
       }
     }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 
   @media (max-width: 680px) {
@@ -654,6 +660,12 @@ height: 100%;
       margin-bottom: 30px;
     }
 
+    &:nth-child(3) {
+      .mr_block_border {
+        border: none;
+      }
+    }
+
     a {
       position: relative;
       display: inline-block;
@@ -709,6 +721,10 @@ height: 100%;
     @media (max-width: 680px) {
       display: block;
     }
+  }
+
+  .sees {
+    display: none;
   }
 
   @media (max-width: 680px) {
