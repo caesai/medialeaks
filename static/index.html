@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MediaLeaks</title>
   </head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,10 +11,15 @@
 
     <header>
       <div class="header_container">
+        <div class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <a href="#" class="header_logo">
           <img src="img/ML_Logo.png" alt="" />
         </a>
-        <ul>
+        <ul class="nav-menu">
           <li><a href="#">Новости</a></li>
           <li><a href="#">Истории</a></li>
           <li><a href="#">Ответы</a></li>
@@ -36,6 +42,13 @@
       <div class="post_template">
         <div class="post_wrapper">
         <div class="post">
+          <div class="mobile_author">
+            <p>Василий Басов</p>
+            <p class="likes">
+              <i class="fa fa-heart"></i>
+              5
+            </p>
+          </div>
           <div class="post_title">
             <div>
               <p class="post_date">19 июля 13:00</p>
@@ -44,6 +57,10 @@
           </div>
 
           <div class="post_content">
+            <div class="mobile-title">
+              <p class="post_date">19 июля 13:00</p>
+              <h1>Лезгинка перед Кадыровым и селфи с Рональдиньо. Как российские звёзды пытались выделиться, болея за «Ахмат</h1>
+            </div>
           <h2>Рудковская,Басков,Плющенко пытались понравиться Кадырову в Грозном, но интернет высмеял российских звезд</h2>
 
           <div class="author_avatar">
@@ -385,6 +402,9 @@
     </footer>
     <script src="js/jquery.min.js"></script>
     <script>
+    $('.mobile-menu').on('click', function(){
+      $('.nav-menu').toggleClass('active');
+    });
     $('.social-network_source_btn').on('click', function(){
       if ($(this).text() == 'Свернуть') {
         $(this).text('Оригинал');

@@ -23,10 +23,15 @@ export default class Template extends React.Component {
       <div>
       <header>
         <div className="header_container">
+          <div className="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <a href="#" className="header_logo">
             <img src={logo} alt="" />
           </a>
-          <ul>
+          <ul className="nav-menu">
             <li><a href="#">Новости</a></li>
             <li><a href="#">Истории</a></li>
             <li><a href="#">Ответы</a></li>
@@ -49,6 +54,13 @@ export default class Template extends React.Component {
       <div className="post_template">
         <div className="post_wrapper">
           <div className="post">
+          <div className="mobile_author">
+            <p>Василий Басов</p>
+            <p className="likes">
+              <i className="fa fa-heart"></i>
+              5
+            </p>
+          </div>
             <div className="post_title">
               <div>
                 <p className="post_date">19 июля 13:00</p>
@@ -57,6 +69,10 @@ export default class Template extends React.Component {
             </div>
 
             <div className="post_content">
+            <div className="mobile-title">
+              <p className="post_date">19 июля 13:00</p>
+              <h1>Лезгинка перед Кадыровым и селфи с Рональдиньо. Как российские звёзды пытались выделиться, болея за «Ахмат</h1>
+            </div>
             <h2>Подзаголовок про Николаса Кейджа, который снимался в хороших фильмах в начале 90х, а потом что-то пошло не так.</h2>
 
             <div className="author_avatar">
