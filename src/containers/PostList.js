@@ -1,8 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 import {parseJSON, _parseJSON} from '../utils';
-import 'whatwg-fetch';
-import base64 from 'base-64';
 
 const mapStateToProps = (state) => ({
   isAuthenticating   : state.auth.isAuthenticating,
@@ -10,7 +9,7 @@ const mapStateToProps = (state) => ({
   location: state.router.location
 });
 
-const DEV_SITE = 'http://dev1.medialeaks.ru';
+const DEV_SITE = 'http://medialeaks.ru';
 
 class PostList extends React.Component {
   constructor(props){
@@ -20,39 +19,36 @@ class PostList extends React.Component {
     }
   }
   componentWillMount () {
-    // return fetch(DEV_SITE + '/wp-json/wp/v2/posts',{
-    //   method: 'get',
-    //   credentials: 'include',
-    //   // mode: 'no-cors',
-    //   headers: {
-    //       'Accept': 'application/json',
-    //       'Content-Type': 'application/json',
-    //       'Authorization': 'Basic ' + Buffer.from('test:eZk3qxEsrtu6BdCYfGXncgjKV').toString('base64')
-    //   }
-    // })
-    // .then((response) => {
-    //   console.log(response);
-    // })
-    // .then(posts => {
-    //   console.log(posts);
-    //   this.setState({
-    //     posts: posts
-    //   });
-    // })
-    // .catch((error) => console.log(error));
+    return fetch(DEV_SITE + '/wp-json/wp/v2/posts',{
+      method: 'get',
+      credentials: 'include',
+      headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+      }
+    })
+    .then(parseJSON)
+    .then(posts => {
+      this.setState({
+        posts: posts
+      });
+    })
+    .catch((error) => console.log(error));
   }
   render(){
     return(
       <div>
         <ul>
           {
-            // this.state.posts.map(item => (
-            //   <li key={item.id}>
-            //     <Link to={`/${item.id}`}>
-            //       {item.title.rendered}
-            //     </Link>
-            //   </li>
-            // ))
+            this.state.posts.map(item => (
+              <li key={item.id}>
+                <Link to={`/${item.id}`}>
+                  {item.title.rendered}
+                </Link>
+                {item.excerpt.rendered}
+                  {console.log(item)}
+              </li>
+            ))
           }
         </ul>
         BlogList
