@@ -51,7 +51,7 @@ a {
   position: relative;
   font-family: Akrobat;
   max-width: 1200px;
-  margin: 80px auto 0; }
+  margin: 104px auto 0; }
 .post_wrapper {
   position: relative;
   display: table;
@@ -111,12 +111,14 @@ a {
 .post_content {
   padding: 0 52px 65px;
   background-color: #fff;
-  font-family: GothamPro;
+  font-family: GothamProBold;
+   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 1.5; }
   .post_content h2 {
     margin: 34px 0;
     font-family: GothamPro;
+    font-weight: bold;
     font-size: 18px; }
   @media (max-width: 680px) {
     .post_content {
@@ -474,6 +476,10 @@ a {
     width: 100%;
     height: 100%;
     z-index: 0; }
+
+    .rightsidebanner {
+      margin-bottom: 25px;
+    }
 
     .middle-banner {
       text-align: center;

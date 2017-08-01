@@ -15,6 +15,7 @@ import sidebarbanner from '../img/sidebarbanner.jpg';
 import middlebanner from '../img/middlebanner.jpg';
 import botbanner from '../img/botbanner.jpg';
 import original from '../img/original.jpg';
+import rightsidebanner from '../img/rightsidebanner.jpg';
 
 export default class Template extends React.Component {
   render(){
@@ -247,6 +248,8 @@ export default class Template extends React.Component {
                 </div>
               </div>
             </div>
+
+            <img src={rightsidebanner} className="rightsidebanner" alt="" />
 
             <div className="history-ofaday">
               <span className="h3">История дня</span>
