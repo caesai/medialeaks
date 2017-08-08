@@ -44,7 +44,7 @@ export default class ListTemplate extends React.Component {
               <div className="posts-list">
                 <h2>самое интересное в интернете сегодня</h2>
 
-                <div className="list-row">
+                <div className="list-row first-row">
 
                   <div className="post-news">
                     <a href="#">

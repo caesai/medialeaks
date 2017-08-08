@@ -33272,7 +33272,7 @@ var ListTemplate = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'div',
-                { className: 'list-row' },
+                { className: 'list-row first-row' },
                 _react2.default.createElement(
                   'div',
                   { className: 'post-news' },
