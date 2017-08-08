@@ -4,6 +4,8 @@ import rightsidebanner from '../img/rightsidebanner.jpg';
 import sidebarbanner from '../img/sidebarbanner.jpg';
 
 export default class RightSideBar extends React.Component {
+  componentDidMount(){
+  }
   render() {
     return(
       <div className="sidebar_right">
