@@ -17,7 +17,7 @@ import botbanner from '../img/botbanner.jpg';
 import original from '../img/original.jpg';
 import rightsidebanner from '../img/rightsidebanner.jpg';
 
-export default class Template extends React.Component {
+export default class PostTemplate extends React.Component {
   render(){
     return(
       <div>

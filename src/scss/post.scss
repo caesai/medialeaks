@@ -1,0 +1,223 @@
+.post_template {
+  position: relative;
+  font-family: Akrobat;
+  max-width: 1200px;
+  margin: 104px auto 0;
+}
+
+.post_wrapper {
+  position: relative;
+  display: table;
+  width: 100%;
+
+  @media(max-width: 680px) {
+    max-width: 680px;
+    display: block;
+  }
+}
+
+.post {
+  display: inline-block;
+  max-width: 875px;
+  background-color: #fff;
+
+  @media(max-width: 680px) {
+    max-width: 680px;
+    display: block;
+  }
+}
+
+.post_title {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 350px;
+  background-image: url('../img/ball.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+  color: #ffffff;
+  padding: 52px;
+
+  div {
+    position: relative;
+    z-index: 2;
+    display: table-cell;
+    vertical-align: bottom;
+
+    h1 {
+      font-family: Akrobat-ExtraBold;
+      font-size: 33px;
+      font-weight: 800;
+      line-height: 1.21;
+      letter-spacing: 0.8px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+
+  .post_date {
+    font-family: GothamPro;
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  @media (max-width: 680px) {
+    padding: 14px;
+    height: 202px;
+
+    div {
+      display: none;
+    }
+  }
+}
+
+.post_content {
+  padding: 0 52px 65px;
+  background-color: #fff;
+  font-family: GothamPro;
+  font-size: 16px;
+  line-height: 1.5;
+ -webkit-font-smoothing: antialiased;
+
+  h2 {
+    margin: 34px 0;
+    font-family: GothamProBold;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  @media (max-width: 680px) {
+    padding: 0 14px;
+  }
+}
+
+.author_avatar {
+  position: relative;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding: 19px 0;
+  margin-bottom: 44px;
+  font-family: GothamPro;
+  font-size: 18px;
+  color: #717171;
+
+  img {
+    float: left;
+    margin-right: 16px;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+  }
+
+  @media (max-width: 680px) {
+    display: none;
+  }
+}
+
+.post_quote {
+  font-family: GothamProBold;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 27px 0;
+  line-height: 1.5;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  margin: 40px 0;
+
+  p {
+    max-width: 680px;
+    margin: 0;
+    display: inline-block;
+    @media (max-width: 480px) {
+      max-width: 225px;
+    }
+  }
+
+  &:before {
+    content: '';
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/quotes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 27px;
+
+    @media (max-width: 680px) {
+      width: 32px;
+      height: 26px;
+      background-size: 25px;
+    }
+  }
+
+  @media(max-width: 680px) {
+    font-size: 16px;
+  }
+}
+
+.post_tags {
+  font-size: 16px;
+  color: #000;
+  margin-top: 33px;
+
+  span {
+    cursor: pointer;
+    padding: 10px 13px 7px 13px;
+    background-color: #d2d2d2;
+    margin-right: 13px;
+    transition: 0.3s ease-out 0.1s;
+    border: 1px solid #d2d2d2;
+
+    &:hover {
+      border-color: #ffdc56;
+      background-color: #fff;
+    }
+
+    @media (max-width: 680px) {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.post_content a {
+    font-family: GothamProBold;
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline;
+}
+.post_content a:hover {
+    color: #ffc831;
+}
+.post_content a:not([href*="medialeaks.ru"]){
+    font-family: GothamPro;
+}
+.post_content a:not([href*="medialeaks.ru"]):hover {
+    color: #333;
+    text-decoration: none;
+}
+.seealso a{
+    color: #333;
+    text-decoration: none;
+}
+.seealso a:hover {
+    text-decoration: underline;
+}
+.seealso{
+    color: #ffc831;
+}
