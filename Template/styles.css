@@ -292,10 +292,10 @@ header {
   @media (max-width: 680px) {
     .main-news-title {
       background-position: right center; } }
-.list-head {
-  display: table;
-  width: 100%;
-}
+    .list-head {
+      display: table;
+      width: 100%;
+    }
 @media (max-width: 680px) {
   .list-head {
     display: block;

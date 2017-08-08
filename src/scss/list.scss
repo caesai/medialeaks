@@ -5,6 +5,15 @@
   margin: 104px auto 0;
 }
 
+.list-head {
+  display: table;
+  width: 100%;
+
+  @media (max-width: 680px) {
+    display: block;
+  }
+}
+
 .main-news-title {
   position: relative;
   display: inline-block;
@@ -157,6 +166,9 @@
 }
 
 .list-row {
+  display: table;
+  width: 100%;
+  
   &:last-child {
     border-bottom: 1px solid rgba(0,0,0,0.15);
   }
