@@ -7,36 +7,6 @@
   vertical-align: top;
   margin-left: 24px;
 
-  .h3 {
-    font-family: AkrobatExtraBold;
-    position: relative;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #ffca00;
-    padding: 12px 0;
-    margin-top: 0;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 0.6px;
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 0;
-      height: 0;
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
-
-      border-top: 15px solid #ffca00;
-    }
-  }
-
-
   .didgest_news {
     margin-bottom: 25px;
     margin-top: 25px;
@@ -145,4 +115,33 @@
 
 .rightsidebanner {
   margin-bottom: 25px;
+}
+
+.h3 {
+  font-family: AkrobatExtraBold;
+  position: relative;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffca00;
+  padding: 12px 0;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+
+    border-top: 15px solid #ffca00;
+  }
 }

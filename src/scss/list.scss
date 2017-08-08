@@ -1,0 +1,260 @@
+.main-container {
+  display: table;
+  max-width: 1200px;
+  width: 100%;
+  margin: 104px auto 0;
+}
+
+.main-news-title {
+  position: relative;
+  display: inline-block;
+  max-width: 877px;
+  width: 100%;
+  height: 357px;
+  background-image: url(../img/list/main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: top;
+
+  &+.main-news-title {
+    background-image: url(../img/list/sub.jpg);
+    max-width: 323px;
+
+    a {
+      max-width: 222px;
+    }
+
+    h2 {
+      font-family: GothamProMed;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.22;
+      left: 22px;
+      bottom: 34px;
+      margin-top: 12px;
+    }
+  }
+
+  a {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    left: 47px;
+    bottom: 65px;
+    width: 100%;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: 415px;
+  }
+
+  h2 {
+    font-family: AkrobatExtraBold;
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 1.21;
+    letter-spacing: 0.8px;
+    color: #fff;
+    margin: 0;
+  }
+
+  .main-news-date {
+    font-family: GothamPro;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    text-align: left;
+    color: #fefefe;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+}
+
+.list-wrapper {
+  position: relative;
+  display: table;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 83px;
+}
+
+.posts-list {
+  display: inline-block;
+  max-width: 877px;
+  width: 100%;
+  background-color: #fff;
+  padding: 45px;
+  padding-bottom: 0;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 33px;
+    font-family: Akrobat-Black;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.67;
+    letter-spacing: 0.6px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+
+.list-row {
+  &:last-child {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+  }
+}
+
+.post-news {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 244px;
+  height: 380px;
+  font-family: GothamProMed;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  text-align: left;
+  color: #000000;
+  margin-right: 12px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &:nth-child(2) {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  &:nth-child(3) {
+    margin-left: 12px;
+    margin-right: 0;
+
+    &:after {
+      border-right: 0;
+    }
+  }
+
+  p {
+    margin-top: 18px;
+    max-width: 230px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -13px;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.15);
+  }
+}
+
+.post-news_image {
+  img {
+    max-width: 100%;
+    height: 146px;
+  }
+}
+
+.post-news_credentials {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  font-family: GothamPro;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2;
+  text-align: left;
+  color: #8f8f8f;
+
+  p {
+    float: left;
+    margin: 0;
+
+    &+p {
+      float: right;
+      font-family: GothamProMed;
+      color: #999999;
+    }
+  }
+}
+
+.more-posts_btn {
+  max-width: 300px;
+  margin: 34px auto 49px;
+  cursor: pointer;
+}
+
+.partnership {
+  background-image: url('../img/list/promo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 17px;
+  padding-top: 5px;
+
+  .post-news_credentials {
+    color: #fff;
+    padding: 0 17px;
+    bottom: 45px;
+
+    p {
+      &+p {
+        color: #fff;
+      }
+    }
+  }
+
+  h3 {
+    display: inline-block;
+    font-family: Akrobat;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffca00;
+    padding: 5px 12px;
+    margin-top: 0;
+  }
+
+  .post-news_caption {
+    
+  }
+
+  .white-bg {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: inherit;
+    bottom: 0;
+    height: 35px;
+    background-color: #fff;
+  }
+}
+
+.partnership_title {
+  text-align: right;
+  margin-right: -17px;
+}

@@ -4,13 +4,15 @@ import rightsidebanner from '../img/rightsidebanner.jpg';
 import sidebarbanner from '../img/sidebarbanner.jpg';
 
 export default class RightSideBar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   componentDidMount(){
   }
   render() {
     return(
       <div className="sidebar_right">
-
-        <img src={sidebarbanner} alt="" />
+        {this.props.banner ? <img src={sidebarbanner} alt="" /> : ''}
 
         <div className="didgest">
           <span className="h3">Самое читаемое</span>
@@ -41,7 +43,7 @@ export default class RightSideBar extends React.Component {
             </div>
           </div>
 
-          <img src={rightsidebanner} className="rightsidebanner" alt="" />
+          {this.props.banner ? <img src={rightsidebanner} className="rightsidebanner" alt="" /> : ''}
 
           <div className="history-ofaday">
             <span className="h3">История дня</span>
