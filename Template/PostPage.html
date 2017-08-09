@@ -226,7 +226,6 @@
         </div>
       </div>
 
-      <div class="sidebar">
       <div class="sidebar_right">
         <img src="img/sidebarbanner.jpg" alt="" style="margin-bottom:25px;" />
         <div class="didgest">
@@ -273,7 +272,6 @@
             </div>
           </div>
         </div>
-      </div>
       </div>
 
       <div class="bottom-banner">
@@ -425,12 +423,12 @@
         console.log(sideBarTop);
         if (scrollTop + winHeight >= sideBarTop + height + gap) {
           if (scrollTop + winHeight >= mostReadable + 180) {
-            $('.sidebar').removeClass('fixed').addClass('absolute').css({'bottom': '26px', 'top': 'inherit'});
+            $('.sidebar_right').removeClass('fixed').addClass('absolute').css({'bottom': '26px', 'top': 'inherit'});
           } else {
-            $('.sidebar').addClass('fixed').css('top', winHeight - height - gap + 'px');
+            $('.sidebar_right').addClass('fixed').css('top', winHeight - height - gap + 'px');
           }
         } else {
-            $('.sidebar').removeClass('fixed').css('top', '0px');
+            $('.sidebar_right').removeClass('fixed').css({'top': '0px', 'bottom': 'inherit'});
         }
       });
     </script>

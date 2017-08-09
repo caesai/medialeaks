@@ -58,7 +58,7 @@
         <div class="posts-list">
           <h2>самое интересное в интернете сегодня</h2>
 
-          <div class="list-row first-row">
+          <div class="list-row">
 
             <div class="post-news">
               <a href="#">
@@ -113,7 +113,7 @@
 
           </div>
 
-          <div class="list-row">
+          <div class="list-row ">
 
             <div class="post-news">
               <a href="#">
@@ -167,7 +167,7 @@
               </div>
             </div>
 
-            <div class="list-row">
+            <div class="list-row first-row">
 
               <div class="post-news">
                 <a href="#">
@@ -334,7 +334,6 @@
 
         </div>
 
-        <div class="sidebar">
         <div class="sidebar_right">
 
           <div class="didgest">
@@ -381,7 +380,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
     </div>
 
@@ -423,19 +421,19 @@
       var sideBarTop = $('.sidebar_right').offset().top;
       var height = $('.sidebar_right').height();
       var winHeight = $(window).height();
-      var mostReadable = $('.more-posts_btn').offset().top;
+      var mostReadable = $('footer').offset().top;
       var gap = 100;
       $(window).scroll(function(event) {
         var scrollTop = $(this).scrollTop();
 
         if (scrollTop + winHeight >= sideBarTop + height + gap) {
-          if (scrollTop + winHeight >= mostReadable) {
-            $('.sidebar').removeClass('fixed').addClass('absolute').css({'bottom': '84px', 'top': 'inherit'});
+          if (scrollTop + winHeight >= mostReadable - 84) {
+            $('.sidebar_right').removeClass('fixed').addClass('absolute').css({'bottom': '0', 'top': 'inherit'});
           } else {
-            $('.sidebar').addClass('fixed').css('top', winHeight - height - gap + 'px');
+            $('.sidebar_right').addClass('fixed').css('top', winHeight - height - gap + 'px');
           }
         } else {
-            $('.sidebar').removeClass('fixed').css('top', '0px');
+            $('.sidebar_right').removeClass('fixed').css({'top': '0px', 'bottom': 'inherit'});
         }
       });
     </script>

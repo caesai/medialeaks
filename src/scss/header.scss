@@ -31,7 +31,7 @@ footer {
       margin-right: 25px;
 
       a {
-        font-family: Akrobat-ExtraBold;
+        font-family: AkrobatExtraBold;
         text-decoration: none;
         text-transform: lowercase;
         color: #000000;
@@ -118,6 +118,8 @@ header {
   left: 0;
 
   .mobile-menu {
+    float: left;
+    margin: 18px -15px 0px 15px;
     display: none;
     span {
       width: 35px;
@@ -125,6 +127,9 @@ header {
       margin-bottom: 7px;
       background: #222527;
       position: relative;
+      display: block;
+    }
+    @media (max-width: 680px) {
       display: block;
     }
   }
