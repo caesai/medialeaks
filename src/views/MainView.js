@@ -3,8 +3,12 @@ import {connect} from 'react-redux';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import RightSideBar from '../components/RightSideBar';
+import MostReadable from '../components/MostReadable';
+import PostBottomBanner from '../components/PostBottomBanner';
 
 const mapStateToProps = (state) => ({
+  initedPage: state.page.initedPage,
   isAuthenticating   : state.auth.isAuthenticating,
   statusText         : state.auth.statusText,
   location: state.router.location
@@ -18,7 +22,14 @@ class MainView extends React.Component {
     return(
       <div>
         <Header />
-        {this.props.children ? <div>{this.props.children}</div> : ''}
+        <div className="main-container">
+          <div className="list-wrapper">
+            {this.props.children ? this.props.children : ''}
+            <RightSideBar />
+            {this.props.initedPage === 'post' ? <PostBottomBanner /> : ''}
+            {this.props.initedPage === 'post' ? <MostReadable /> : ''}
+          </div>
+        </div>
         <Footer />
       </div>
     )

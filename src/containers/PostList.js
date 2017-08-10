@@ -1,7 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
-import {parseJSON, _parseJSON} from '../utils';
+import {parseJSON} from '../utils';
+
+const actions = {
+  initPage: (page) => ({
+      type: 'PAGE_INIT',
+      payload: {
+        initedPage: page
+      }
+  }),
+  initialize: (type) => (dispatch) => {
+    dispatch(actions.initPage(type));
+  }
+}
 
 const mapStateToProps = (state) => ({
   isAuthenticating   : state.auth.isAuthenticating,
@@ -18,6 +30,9 @@ class PostList extends React.Component {
       posts: []
     }
   }
+  componentDidMount() {
+    this.props.dispatch(actions.initialize('list'));
+  }
   componentWillMount () {
     return fetch(DEV_SITE + '/wp-json/wp/v2/posts?_embed',{
       method: 'get',
@@ -29,7 +44,6 @@ class PostList extends React.Component {
     })
     .then(parseJSON)
     .then(posts => {
-      console.log(posts);
       this.setState({
         posts: posts
       });
@@ -43,7 +57,6 @@ class PostList extends React.Component {
         <div className="post-news" key={item.id}>
           <Link to={`/${item.id}`}>
             <div className="post-news_image">
-            { item.featured_image }
               {item._embedded['wp:featuredmedia'].map((media, key) => {
                 return <img src={media.source_url} alt="" key={key} />
               })}
@@ -68,15 +81,11 @@ class PostList extends React.Component {
         return <div className="list-row" key={key}>{rowContent}</div>;
     });
     return(
-      <div className="main-container">
-        <div className="list-wrapper">
-          <div className="posts-list">
-            <h2>самое интересное в интернете сегодня</h2>
-            {postsRow}
-            <div className="more-posts_btn">
-              <span className="h3">загрузить еще</span>
-            </div>
-          </div>
+      <div className="posts-list">
+        <h2>самое интересное в интернете сегодня</h2>
+        {postsRow}
+        <div className="more-posts_btn">
+          <span className="h3">загрузить еще</span>
         </div>
       </div>
     )

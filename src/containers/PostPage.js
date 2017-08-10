@@ -2,9 +2,17 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {parseJSON} from '../utils';
 
-import RightSideBar from '../components/RightSideBar';
-import MostReadable from '../components/MostReadable';
-import PostBottomBanner from '../components/PostBottomBanner';
+const actions = {
+  initPage: (page) => ({
+      type: 'PAGE_INIT',
+      payload: {
+        initedPage: page
+      }
+  }),
+  initialize: (type) => (dispatch) => {
+    dispatch(actions.initPage(type));
+  }
+}
 
 const mapStateToProps = (state) => ({
   location: state.router.location
@@ -18,6 +26,9 @@ class PostPage extends React.Component {
     this.state = {
       post: null
     };
+  }
+  componentDidMount() {
+    this.props.dispatch(actions.initialize('post'));
   }
   componentWillMount () {
     return fetch(DEV_SITE + '/wp-json/wp/v2/posts/' + this.props.params.id,{
@@ -39,23 +50,15 @@ class PostPage extends React.Component {
   render(){
     if (!this.state.post) return <div>Загрузка...</div>
     return(
-      <div className="post_template">
-        <div className="post_wrapper">
-          <div className="post">
-
-            <div className="post_title">
-              <div>
-                <h1>{this.state.post.title.rendered}</h1>
-              </div>
-            </div>
-            <div className="post_content">
-              <div dangerouslySetInnerHTML={{ __html : this.state.post.content.rendered }}></div>
-            </div>
+      <div className="post">
+        <div className="post_title">
+          <div>
+            <h1>{this.state.post.title.rendered}</h1>
           </div>
-          <RightSideBar />
-          <PostBottomBanner />
         </div>
-        <MostReadable />
+        <div className="post_content">
+          <div dangerouslySetInnerHTML={{ __html : this.state.post.content.rendered }}></div>
+        </div>
       </div>
     )
   }
