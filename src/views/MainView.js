@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import MainListTitle from '../components/MainListTitle';
 import RightSideBar from '../components/RightSideBar';
 import MostReadable from '../components/MostReadable';
 import PostBottomBanner from '../components/PostBottomBanner';
@@ -23,11 +24,11 @@ class MainView extends React.Component {
       <div>
         <Header />
         <div className="main-container">
+          {this.props.initedPage === 'list' ?  <MainListTitle /> : ''}
           <div className="list-wrapper">
             {this.props.children ? this.props.children : ''}
             <RightSideBar />
-            {this.props.initedPage === 'post' ? <PostBottomBanner /> : ''}
-            {this.props.initedPage === 'post' ? <MostReadable /> : ''}
+            {this.props.initedPage === 'post' ? <div> <PostBottomBanner />  <MostReadable /> </div> : ''}
           </div>
         </div>
         <Footer />
